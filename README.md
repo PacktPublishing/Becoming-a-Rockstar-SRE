@@ -8,6 +8,8 @@
 
 ## Chapter 1
 
+### In practice
+
 ## Chapter 2
 
 ## Chapter 3
@@ -42,4 +44,6 @@
 
 ## Appendix
 
-### SRE Manifesto
+### Manifesto
+
+* The SRE [Manifesto](./Appendix/sre-manifesto.md)
