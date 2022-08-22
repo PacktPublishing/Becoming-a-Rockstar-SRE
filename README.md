@@ -6,44 +6,53 @@
 * Author: `Jeremy Proffitt`
 * Co-author: `Rod Anami`
 
-## Chapter 1
+## Part I
 
-### In practice
+### Chapter 1
 
-## Chapter 2
+* In practice
 
-## Chapter 3
+### Chapter 2
 
-## Chapter 4
+### Chapter 3
 
-## Chapter 5
+## Part II
 
-## Chapter 6
+### Chapter 4
 
-## Chapter 7
+### Chapter 5
 
-## Chapter 8
+### Chapter 6
 
-## Chapter 9
+### Chapter 7
 
-## Chapter 10
+## Part III
 
-## Chapter 11
+### Chapter 8
 
-## Chapter 12
+### Chapter 9
 
-## Chapter 13
+### Chapter 10
 
-## Chapter 14
+### Chapter 11
 
-## Chapter 15
+### Chapter 12
 
-## Chapter 16
+## Part IV
 
-## Chapter 17
+### Chapter 13
 
-## Appendix
+### Chapter 14
 
-### Manifesto
+### Chapter 15
 
-* The SRE [Manifesto](./Appendix/sre-manifesto.md)
+## Part V
+
+### Chapter 16
+
+### Chapter 17
+
+### Appendix
+
+* Manifesto
+  * The SRE [Manifesto](./Appendix/sre-manifesto.md)
