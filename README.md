@@ -10,15 +10,19 @@
 
 ### Chapter 1
 
-* There's no practical knowledge for this chapter.
+* There's no practical exercises for this chapter.
 
 ### Chapter 2
 
+* There's no practical exercises for this chapter.
+
 ### Chapter 3
 
-## Part II
+* There's no practical exercises for this chapter.
 
-### Chapter 4
+## Part II - Implementing Observability for SRE
+
+### Chapter 4 - The Essential Observability: Metrics, events, logs, and traces (MELT)
 
 * In practice - applying what you’ve learned
   * Observability simulation [lab](./Chapter-4/observability-simulation-lab.md)

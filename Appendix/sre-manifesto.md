@@ -14,7 +14,7 @@ We welcome any one to use this **manifesto** at will as we made it public. We wi
 
 Signing,
 
-* `Jeremy Proffitt` - SRE Director - Ally
-* `Rod Anami` - Client Transformation SRE - Kyndryl
+* `Jeremy Proffitt` - Book author, SRE Director, Ally
+* `Rod Anami` - Book author, Client Transformation SRE, Kyndryl
 
 `Disclaimer:` _The opinions expressed by the authors and technical reviewers on this material are their own and they are not necessarily the opinions of any of the companies listed here or its subsidiaries._
