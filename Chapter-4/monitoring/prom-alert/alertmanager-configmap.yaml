@@ -1,0 +1,50 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: alertmanager-config
+  namespace: monitoring
+data:
+  config.yml: |-
+    global:
+    templates:
+    - '/etc/alertmanager-templates/*.tmpl'
+    route:
+      receiver: pagerduty-demo
+      group_by: ['alertname', 'cluster', 'priority']
+      group_wait: 30s
+      repeat_interval: 30m
+      routes:
+        - receiver: multiple-demo
+          matchers:
+            - severity="critical"
+          group_wait: 10s
+          repeat_interval: 5m
+
+    receivers:
+    - name: pagerduty-demo
+      pagerduty_configs:
+        - service_key: 839c158ab8c64e02c07415f9bce9835b
+    - name: multiple-demo
+      pagerduty_configs:
+        - service_key: 9b14eb0a918b450fd0e98a371b75cadf
+          send_resolved: true
+      slack_configs:
+      - api_url: https://hooks.slack.com/services/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
+        channel: '#obssim-demo'
+        color: '{{ template "slack.color" . }}'
+        title: '{{ template "slack.title" . }}'
+        text: '{{ template "slack.text" . }}'
+        send_resolved: true
+        actions:
+          - type: button
+            text: 'Runbook :green_book:'
+            url: '{{ (index .Alerts 0).Annotations.runbook_url }}'
+          - type: button
+            text: 'Query :mag:'
+            url: '{{ template "__alertmanagerURL" . }}'
+          - type: button
+            text: 'Dashboard :chart_with_upwards_trend:'
+            url: '{{ (index .Alerts 0).Annotations.dashboard_url }}'
+          - type: button
+            text: 'Silence :no_bell:'
+            url: '{{ template "__alert_silence_link" . }}'

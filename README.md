@@ -1,7 +1,7 @@
 # Becoming an SRE Rockstar
 **Unlocking the full potential of SRE to efficiently solve with infrastructure and operations issues**
 
-* **Becoming an SRE Rockstar**, published by packt
+* **Becoming an SRE Rockstar**, published by `Packt`
 * ISBN: `978-1-80323-922-4`
 * Author: `Jeremy Proffitt`
 * Co-author: `Rod Anami`
@@ -10,7 +10,7 @@
 
 ### Chapter 1
 
-* In practice
+* There's no practical knowledge for this chapter.
 
 ### Chapter 2
 
@@ -19,6 +19,9 @@
 ## Part II
 
 ### Chapter 4
+
+* In practice - applying what you’ve learned
+  * Observability simulation [lab](./Chapter-4/observability-simulation-lab.md)
 
 ### Chapter 5
 
