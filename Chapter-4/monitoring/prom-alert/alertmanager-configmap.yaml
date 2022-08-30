@@ -23,13 +23,13 @@ data:
     receivers:
     - name: pagerduty-demo
       pagerduty_configs:
-        - service_key: 839c158ab8c64e02c07415f9bce9835b
+        - service_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     - name: multiple-demo
       pagerduty_configs:
-        - service_key: 9b14eb0a918b450fd0e98a371b75cadf
+        - service_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
           send_resolved: true
       slack_configs:
-      - api_url: https://hooks.slack.com/services/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
+      - api_url: https://hooks.slack.com/services/XXXXXXXXXXX/YYYYYYYYYYY/000000000000000000000000
         channel: '#obssim-demo'
         color: '{{ template "slack.color" . }}'
         title: '{{ template "slack.title" . }}'
