@@ -2,11 +2,25 @@
 
 ## Chapter 4 - Observability Simulation Lab
 
-### Objectives
+### Learning objectives
+
+* Learn the basics on monitoring and alerting tools
+
+* Learn how to deploy a monitoring platform to a Kubernetes cluster
+
+* Learn how use Prometheus, Grafana, Alertmanager, and exporters together
 
 ### Pre-requisite knowledge
 
-### Google Cloud Platform
+*	Familiarity with Kubernetes
+
+*	Basic notions on Node.js (JavaScript) programming language
+
+*	Good understanding of YAML (Yet Another Markup Language)
+
+### Kubernetes cluster
+
+This lab runs on any K8s cluster, we recommend using a free trial account on Google Cloud Platform. You can create one through this [documentation](https://cloud.google.com/free).
 
 * GKE Configuration
 
@@ -20,5 +34,6 @@
 | | |
 
 ### Installation
+
 
 ### Configuration
