@@ -44,7 +44,7 @@ data:
         static_configs:
          - targets:
             - https://www.google.com
-            - http://<LBIP>:60000/fortune
+            - http://<load-balancer-vip>:60000/fortune
             - https://prometheus.io
         relabel_configs:
          - source_labels: [__address__]

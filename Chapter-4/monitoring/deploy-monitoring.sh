@@ -24,11 +24,6 @@ kubectl get deployments -n monitoring
 # Prometheus Server - create a service to expose a NodePort for the prometheus dashboard
 kubectl create -f prom-server/prometheus-service.yaml
 
-# kubectl create secret tls secure-ingress \
-#    --namespace monitoring \
-#    --key server.key \
-#    --cert server.crt
-
 # Prometheus Server - Create a basic ingress with external LB
 kubectl create -f prom-server/prometheus-basic-ingress.yaml
 
@@ -45,6 +40,14 @@ kubectl create -f prom-alert/alertmanager-deployment.yaml
 # AlertManager - create service
 kubectl create -f prom-alert/alertmanager-service.yaml
 
+# Node exporter
+# Node exporter - create daemonset
+kubectl create -f prom-node/node-exporter-daemonset.yaml
+
+# Node exporter - create service
+kubectl create -f prom-node/node-exporter-service.yaml
+
+# Blackbox exporter
 # Blackbox exporter - create config map
 kubectl create -f prom-blackbox/blackbox-exporter-configmap.yaml
 
