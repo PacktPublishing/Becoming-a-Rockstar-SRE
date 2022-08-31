@@ -5,6 +5,9 @@ metadata:
   namespace: monitoring
   labels:
     app: blackbox-exporter
+  annotations:
+      prometheus.io/scrape: 'true'
+      prometheus.io/port:   '9115'  
 spec:
   type: ClusterIP
   ports:

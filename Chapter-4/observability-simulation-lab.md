@@ -28,13 +28,13 @@ In case you use a GCP account for this lab, we provided the Google Kubernetes En
 
 | **Parameter** | **Value** |
 |:--------------------------------|:--------------------------------|
-| GKE mode | Standard with static K8s version |
-| Location type | Zonal |
-| Release channel | None |
-| Kubernetes version | 1.23.9-gke.900 |
-| Number of nodes | 3 |
-| Machine type| e2-standard-2 |
-| Image type | cos_containerd |
+| GKE mode | `Standard with static K8s version` |
+| Location type | `Zonal` |
+| Release channel | `None` |
+| Kubernetes version | `1.23.9-gke.900` |
+| Number of nodes | `3` |
+| Machine type | `e2-standard-2` |
+| Image type | `cos_containerd` |
 | | |
 
 ### Installation
