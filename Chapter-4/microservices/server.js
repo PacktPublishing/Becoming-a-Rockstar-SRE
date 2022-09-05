@@ -19,6 +19,9 @@ app.get('/', (req, res) => {
   res.send('Hello World from Rod\n');
 });
 
+/*
+This is a simple health checked endpoint
+*/
 app.get('/health', (req, res) => {
   let goodHealth = true;
   // check the health of your machine
@@ -36,6 +39,9 @@ app.get('/health', (req, res) => {
   }
 });
 
+/*
+A fun API endpoint to be monitored
+*/
 app.get('/fortune', (req, res) => {
   axios.get(FortuneAPI)
   .then(function (response) {
