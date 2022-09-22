@@ -22,14 +22,17 @@
 
 ## Part II - Implementing Observability for SRE
 
-### Chapter 4 - The Essential Observability: Metrics, events, logs, and traces (MELT)
+### Chapter 4 - The Essential Observability: Metrics, Events, Logs, and Traces (MELT)
 
 * In practice - applying what you’ve learned
   * Observability simulation [lab](./Chapter-4/observability-simulation-lab.md)
 
 ### Chapter 5
 
-### Chapter 6
+### Chapter 6 - The Operational Framework: Managing Infrastructure and Systems
+
+* In practice - applying what you’ve learned
+  * Provisioning simulation [lab]()
 
 ### Chapter 7
 
