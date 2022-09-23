@@ -1,3 +1,0 @@
-
-terraform init 
-terraform fmt
