@@ -15,12 +15,12 @@ provider "google" {
 }
 
 resource "google_compute_network" "vpc_network" {
-  name = "rockstart-network"
+  name = "rockstar-network"
 }
 
 resource "google_compute_instance" "vm_instance" {
   depends_on   = [google_compute_network.vpc_network]
-  name         = "rockstart-server"
+  name         = "rockstar-server"
   machine_type = "e2-medium"
 
   boot_disk {
@@ -29,7 +29,7 @@ resource "google_compute_instance" "vm_instance" {
     }
   }
   network_interface {
-    network = "terraform-network"
+    network = "rockstar-network"
     access_config {
     }
   }

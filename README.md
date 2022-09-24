@@ -1,5 +1,5 @@
 # Becoming an SRE Rockstar
-**Unlocking the full potential of SRE to efficiently solve with infrastructure and operations issues**
+**Electrify your SRE mindset to create the perfect ballad of reliability, resiliency, and efficiency**
 
 * **Becoming an SRE Rockstar**, published by `Packt`
 * ISBN: `978-1-80323-922-4`

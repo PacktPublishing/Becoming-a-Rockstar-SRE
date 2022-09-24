@@ -57,8 +57,8 @@ async function createInstance(instanceName, netName) {
       machineType: `zones/${zone}/machineTypes/${machineType}`,
       networkInterfaces: [
         {
-          // Use the network interface provided in the networkName argument.
-          name: netName,
+          // Use the network interface provided in the netName argument.
+          name: `global/networks/${netName}`,
         },
       ],
       disks: [
@@ -199,7 +199,7 @@ switch (args[0]) {
     listCustomImages();
     break;
   case 'createInstance':
-    createInstance(args[1], networkName);
+    createInstance(args[1], args[2]);
     break;
   case 'getInstance':
     getInstance(args[1]);

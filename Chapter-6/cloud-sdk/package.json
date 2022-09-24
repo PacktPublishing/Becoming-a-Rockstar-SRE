@@ -1,10 +1,10 @@
 {
   "name": "cloud-sdk",
   "version": "0.1.0",
-  "description": "A simple examples of the Google Cloud SDK",
+  "description": "A simple app to demonstrate the Google Cloud SDK",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "source process.env && node app.js listCustomImages"
   },
   "author": "rod.anami@kyndryl.com",
   "license": "MIT",

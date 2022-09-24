@@ -139,11 +139,11 @@ terraform destroy
 cd cloud-sdk
 source process.env
 node app.js listCustomImages
-node app.js createInstance
-node app.js getInstance
-node app.js startInstance
-node app.js stopInstance
-node app.js deleteInstance
+node app.js createInstance rockstar-server default
+node app.js getInstance rockstar-server
+node app.js startInstance rockstar-server
+node app.js stopInstance rockstar-server
+node app.js deleteInstance rockstar-server
 ```
 
 
