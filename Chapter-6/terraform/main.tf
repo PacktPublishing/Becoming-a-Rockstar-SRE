@@ -8,11 +8,10 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("observability-simulation-lab-9351fc370acd.json")
-
-  project = "observability-simulation-lab"
-  region  = "us-central1"
-  zone    = "us-central1-c"
+  credentials = file("project-service-account-key.json")
+  project = "provisioning-simulation-lab"
+  region  = "southamerica-east1"
+  zone    = "southamerica-east1-a"
 }
 
 resource "google_compute_network" "vpc_network" {

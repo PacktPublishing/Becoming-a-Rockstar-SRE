@@ -13,6 +13,7 @@ const networkName = process.env.GCP_NETWORK_NAME;
 
 const compute = require('@google-cloud/compute');
 
+const args = process.argv.slice(2);
 /*
 List all custom images created under the project Id
 based on https://github.com/googleapis/nodejs-compute/blob/main/samples/listImages.js
@@ -192,16 +193,26 @@ async function deleteInstance(instanceName) {
   console.log(`Instance ${instanceName} has been deleted.`);
 }
 
-// Uncomment/comment below rows to execute specific tasks
 
-listCustomImages();
-
-createInstance("rockstart-server", networkName);
-
-getInstance("rockstart-server");
-
-startInstance("rockstart-server");
-
-stopInstance("rockstart-server");
-
-deleteInstance("rockstart-server");
+switch (args[0]) {
+  case 'listCustomImages':
+    listCustomImages();
+    break;
+  case 'createInstance':
+    createInstance(args[1], networkName);
+    break;
+  case 'getInstance':
+    getInstance(args[1]);
+    break;
+  case 'startInstance':
+    startInstance(args[1]);
+    break;
+  case 'stopInstance':
+    stopInstance(args[1]);
+    break;
+  case 'deleteInstance':
+    deleteInstance(args[1]);
+    break;
+  default:
+    console.log(`Argument ${args[0]} is not valid.`);
+}

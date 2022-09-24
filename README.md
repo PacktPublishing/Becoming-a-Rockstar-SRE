@@ -32,7 +32,7 @@
 ### Chapter 6 - The Operational Framework: Managing Infrastructure and Systems
 
 * In practice - applying what you’ve learned
-  * Provisioning simulation [lab]()
+  * Provisioning simulation [lab](./Chapter-6/provisioning-simulation-lab.md)
 
 ### Chapter 7
 

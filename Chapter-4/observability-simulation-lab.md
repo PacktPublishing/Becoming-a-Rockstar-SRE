@@ -20,7 +20,7 @@
 
 ### Kubernetes cluster
 
-This lab runs on any K8s cluster, we recommend using a free trial account on Google Cloud Platform. You can create one through this [documentation](https://cloud.google.com/free).
+This lab runs on any K8s cluster with few adjusts on the ingresses, we recommend using a free trial account on Google Cloud Platform. You can create one through this [documentation](https://cloud.google.com/free). You can download and install the Google CLI `gcloud` by checking this [document](https://cloud.google.com/sdk/docs/install).
 
 In case you use a GCP account for this lab, we provided the Google Kubernetes Engine (GKE) recommended configuration below:
 

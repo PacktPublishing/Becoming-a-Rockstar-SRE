@@ -54,7 +54,7 @@ web_modules/
 
 # Credentials
 *.key
-*.json
+*key.json
 
 # dotenv environment variable files
 *.env
