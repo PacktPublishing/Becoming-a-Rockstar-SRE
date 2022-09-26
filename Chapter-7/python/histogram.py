@@ -1,9 +1,7 @@
 import warnings
-
-with warnings.catch_warnings():
-    warnings.filterwarnings("ignore",category=DeprecationWarning)
+warnings.simplefilter("ignore", category=PendingDeprecationWarning)
+warnings.simplefilter("ignore", category=DeprecationWarning)
 import matplotlib.pyplot as plt
-
 import numpy as np
 from matplotlib import colors
 
