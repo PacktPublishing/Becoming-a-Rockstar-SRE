@@ -4,9 +4,11 @@ We the `Becoming an SRE Rockstar` authors and technical reviewers, met together 
 
 We believe we can create a more unified, concise, and solid SRE persona by stating their essential responsibilities:
 
-* SREs make sure their customer's applications are `reliable`
+* SREs make sure their applications are `reliable`, and not just available and resilient.
 
-*
+* SREs ensure all systems and applications are `observable` and under monitoring.
+
+* SREs manage systems, services, and Infrastructure to learn how to `automate toil`.
 
 We welcome any one to use this **manifesto** at will as we made it public. We will review this **manifesto** and update it in this repository every year.
 

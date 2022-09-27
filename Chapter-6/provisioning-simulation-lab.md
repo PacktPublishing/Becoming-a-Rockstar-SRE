@@ -114,7 +114,7 @@ export GCP_MACHINE_TYPE="e2-medium"
 export GCP_MACHINE_IMAGE_PROJECT="cos-cloud"
 export GCP_MACHINE_IMAGE_FAMILY="cos-101-lts"
 export GCP_ZONE="southamerica-east1-a"
-export GCP_NETWORK_NAME="global/networks/default"
+export GCP_NETWORK_NAME="default"
 ```
 
 You can consult the values for the available machine images on this [document](https://cloud.google.com/compute/docs/images/os-details).
@@ -145,6 +145,5 @@ node app.js startInstance rockstar-server
 node app.js stopInstance rockstar-server
 node app.js deleteInstance rockstar-server
 ```
-
 
 ## End of document

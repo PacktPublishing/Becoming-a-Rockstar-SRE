@@ -6,6 +6,8 @@
 * Author: `Jeremy Proffitt`
 * Co-author: `Rod Anami`
 
+**Disclaimer:** Below practical exercises and labs have been designed as integral part of this book. We recommend using below materials in conjunction with the book contents to have a complete understanding of the concept and on what's happening under the hood.
+
 ## Part I
 
 ### Chapter 1
@@ -34,7 +36,10 @@
 * In practice - applying what you’ve learned
   * Provisioning simulation [lab](./Chapter-6/provisioning-simulation-lab.md)
 
-### Chapter 7
+### Chapter 7 - The Data Consumed: The Observability Data Science
+
+* In practice - applying what you’ve learned
+  * Data analysis simulation [lab](./Chapter-7/data-analysis-simulation-lab.md)
 
 ## Part III
 
