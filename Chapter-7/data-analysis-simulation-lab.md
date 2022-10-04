@@ -33,7 +33,21 @@ Folder: `python`
 
 ### Installation
 
+* Python and pip
+
+1. To install `python` and `pip`, check the documentation [here](https://www.python.org/downloads/).
+
 ### Configuration
+
+* Python
+
+1. Install `NumPy` package with the following command:
+
+  * `pip install numpy`
+
+2. Install `matplotlbi` library with this command:
+
+  * `pip install matplolib`
 
 ### Usage
 
