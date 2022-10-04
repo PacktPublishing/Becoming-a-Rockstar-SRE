@@ -4,15 +4,15 @@
 
 ### Learning objectives
 
-* Learn how to use Terraform as an Infrastructure as Code (IaC) tool for Google Cloud Platform
+* Learn how to use `Terraform` as an Infrastructure as Code (IaC) tool for `Google Cloud Platform`
 
-* Learn how to use Google Cloud SDK for Node.js as an IaC tool.
+* Learn how to use `Google Cloud SDK for Node.js` as an IaC tool
 
 ### Pre-requisite knowledge
 
 * Familiarity with cloud computing and cloud platforms
 
-* Basic notions on Node.js (JavaScript) programming language
+* Basic notions on `Node.js` (JavaScript) programming language
 
 
 ### Cloud Platform
@@ -78,7 +78,7 @@ Folder: `terraform`
 
 1. To install the npm package for the Cloud SDK, do the following:
 
-```
+```shell
 cd cloud-sdk
 npm install
 ```
@@ -89,7 +89,7 @@ npm install
 
 1. Change the provider configuration accordingly:
 
-```
+```yaml
 provider "google" {
   credentials = file("project-service-account-key.json")
   project = "provisioning-simulation-lab"
@@ -108,7 +108,7 @@ You can consult the available regions and zones on this [document](https://cloud
 
 2. Change the values on `process.env` to reflect your environment parameters
 
-```
+```shell
 export GCP_PROJECT_ID="provisioning-simulation-lab"
 export GCP_MACHINE_TYPE="e2-medium"
 export GCP_MACHINE_IMAGE_PROJECT="cos-cloud"
@@ -124,7 +124,7 @@ You can consult the values for the available machine images on this [document](h
 
 * Terraform
 
-```
+```shell
 cd terraform
 terraform init
 terraform fmt
@@ -135,7 +135,7 @@ terraform destroy
 
 * Google Cloud SDK
 
-```
+```shell
 cd cloud-sdk
 source process.env
 node app.js listCustomImages
@@ -145,5 +145,10 @@ node app.js startInstance rockstar-server
 node app.js stopInstance rockstar-server
 node app.js deleteInstance rockstar-server
 ```
+
+### Explanations
+
+Please check the book chapter VI for explanations of the concepts applied in this lab.
+
 
 ## End of document

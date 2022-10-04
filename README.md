@@ -6,7 +6,7 @@
 * Author: `Jeremy Proffitt`
 * Co-author: `Rod Anami`
 
-**Disclaimer:** Below practical exercises and labs have been designed as integral part of this book. We recommend using below materials in conjunction with the book contents to have a complete understanding of the concept and on what's happening under the hood.
+**Disclaimer:** The practical exercises and labs below have been designed as an integral part of this book. We recommend using these repository materials in conjunction with the book contents.
 
 ## Part I
 

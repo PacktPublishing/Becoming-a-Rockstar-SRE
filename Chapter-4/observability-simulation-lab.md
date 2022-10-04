@@ -268,6 +268,10 @@ prometheus.yaml: |-
   }
 ```
 
-It defines a Grafana datasource to be the Prometheus server inside the same namespace.
+It defines a `Grafana` datasource to be the Prometheus server inside the same namespace.
+
+### Explanations
+
+Please check the book chapter IV for explanations of the concepts applied in this lab.
 
 ## End of document
