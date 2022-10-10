@@ -6,9 +6,9 @@
 * Author: `Jeremy Proffitt`
 * Co-author: `Rod Anami`
 
-**Disclaimer:** The practical exercises and labs below have been designed as an integral part of this book. We recommend using these repository materials in conjunction with the book contents.
+**Disclaimer:** The practical exercises and labs below have been designed as an integral part of the _Becoming an SRE Rockstar_ book. We recommend using these repository materials in conjunction with the book chapter contents.
 
-## Part I
+## Part I - Understanding the basics of who, what and why
 
 ### Chapter 1
 
@@ -41,9 +41,12 @@
 * In practice - applying what you’ve learned
   * Data analysis simulation [lab](./Chapter-7/data-analysis-simulation-lab.md)
 
-## Part III
+## Part III - Applying architecture for reliability
 
-### Chapter 8
+### Chapter 8 - The Reliable Architecture: Systems Strategy and Design
+
+* In practice - applying what you’ve learned
+  * Scaling out simulation [lab]()
 
 ### Chapter 9
 
@@ -53,7 +56,7 @@
 
 ### Chapter 12
 
-## Part IV
+## Part IV - Mastering the outage moments
 
 ### Chapter 13
 
@@ -61,7 +64,7 @@
 
 ### Chapter 15
 
-## Part V
+## Part V - Looking into future trends and preparing for SRE interviews
 
 ### Chapter 16
 
