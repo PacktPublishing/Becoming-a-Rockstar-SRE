@@ -74,3 +74,6 @@
 
 * Manifesto
   * The SRE [Manifesto](./Appendix/sre-manifesto.md)
+
+* The Twelve-Factor App
+  * Assessment [Questionnaire](./Appendix/12-factor-app-assess.md)

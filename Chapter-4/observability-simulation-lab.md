@@ -274,4 +274,4 @@ It defines a `Grafana` datasource to be the Prometheus server inside the same na
 
 Please check the book chapter IV for explanations of the concepts applied in this lab.
 
-## End of document
+## End of the Document

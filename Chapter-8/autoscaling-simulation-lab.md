@@ -1,18 +1,16 @@
 # Becoming an SRE Rockstar
 
-## Chapter 6 - Provisioning Simulation Lab
+## Chapter 8 - Autoscaling Simulation Lab
 
 ### Learning objectives
 
 * Learn how to use `Terraform` as an Infrastructure as Code (IaC) tool for `Google Cloud Platform`
 
-* Learn how to use `Google Cloud SDK for Node.js` as an IaC tool
+* Learn how to `autoscaling` and `load balancing` works on GCP using `Terraform`
 
 ### Pre-requisite knowledge
 
 * Familiarity with cloud computing and cloud platforms
-
-* Basic notions on `Node.js` (JavaScript) programming language
 
 
 ### Cloud Platform
@@ -51,37 +49,15 @@ Folder: `terraform`
 
 | **File / folder** | **Description** |
 |:--------------------------------|:--------------------------------|
-| main.tf | `Terraform configuration - a IaC definition file that uses HCL` |
+| main.tf | `Terraform configuration - an IaC that declares autoscaling instances pool and a load balancer` |
 | | |
 
-* Cloud SDK
-
-| **File / folder** | **Description** |
-|:--------------------------------|:--------------------------------|
-| app.js | `Node.js app code that uses the Google Cloud SDK for Node.js library` |
-| package.json | `JSON file that contains the description of the Node.js app` |
-| package-lock.json | `JSON file that contains the last state of the installed Node.js packages` |
-| process.env-example | `Shell script file that contains an example of the app configuration` |
-| | |
 
 ### Installation
-
-* Node.js and npm
-
-1. To install Node.js and npm, check the documentation [here](https://nodejs.org/en/download/).
 
 * Terraform
 
 1. To install Terraform CLI, follow the details from [here](https://learn.hashicorp.com/tutorials/terraform/install-cli).
-
-* Google Cloud SDK for Node.js
-
-1. To install the npm package for the Cloud SDK, do the following:
-
-```shell
-cd cloud-sdk
-npm install
-```
 
 ### Configuration
 
@@ -92,7 +68,7 @@ npm install
 ```yaml
 provider "google" {
   credentials = file("project-service-account-key.json")
-  project = "provisioning-simulation-lab"
+  project = "autoscaling-simulation-lab"
   region  = "southamerica-east1"
   zone    = "southamerica-east1-a"
 }
@@ -101,23 +77,6 @@ provider "google" {
 You can consult the available regions and zones on this [document](https://cloud.google.com/compute/docs/regions-zones).
 
 2. Replace `credentials` filename per the one you have downloaded from GCP console. Fix the project id, region, and zone in the same block.
-
-* Cloud SDK
-
-1. Copy `process.env-example` to `process.env`
-
-2. Change the values on `process.env` to reflect your environment parameters
-
-```shell
-export GCP_PROJECT_ID="provisioning-simulation-lab"
-export GCP_MACHINE_TYPE="e2-medium"
-export GCP_MACHINE_IMAGE_PROJECT="cos-cloud"
-export GCP_MACHINE_IMAGE_FAMILY="cos-101-lts"
-export GCP_ZONE="southamerica-east1-a"
-export GCP_NETWORK_NAME="default"
-```
-
-You can consult the values for the available machine images on this [document](https://cloud.google.com/compute/docs/images/os-details).
 
 
 ### Usage
@@ -133,22 +92,9 @@ terraform apply
 terraform destroy
 ```
 
-* Google Cloud SDK
-
-```shell
-cd cloud-sdk
-source process.env
-node app.js listCustomImages
-node app.js createInstance rockstar-server default
-node app.js getInstance rockstar-server
-node app.js startInstance rockstar-server
-node app.js stopInstance rockstar-server
-node app.js deleteInstance rockstar-server
-```
-
 ### Explanations
 
-Please check the book chapter VI for explanations of the concepts applied in this lab.
+Please check the book chapter VIII for explanations of the concepts applied in this lab.
 
 
 ## End of the Document
