@@ -1,6 +1,6 @@
 # Becoming an SRE Rockstar
 
-## Chapter 11 - The Worker Bees - Orchestrations of Serverless, containers and Kubernetes Lab
+### Chapter 11 - The Worker Bees - Orchestrations of Serverless, containers and Kubernetes Lab
 
 ## Understanding orchestrated worker reliabity and retries lab
 

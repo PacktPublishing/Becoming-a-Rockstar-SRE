@@ -54,6 +54,9 @@
 
 ### Chapter 11
 
+* In practice - applying what you've learned
+  * Understanding orchestrated worker reliabity and retries [lab](./Chapter-11/readme.md)
+
 ### Chapter 12
 
 ## Part IV - Mastering the outage moments
