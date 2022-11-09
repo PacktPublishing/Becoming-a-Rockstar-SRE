@@ -48,7 +48,7 @@
 * In practice - applying what you’ve learned
   * Autoscaling simulation [lab](./Chapter-8/autoscaling-simulation-lab.md)
 
-### Chapter 9
+### Chapter 9 - The Valued Automation: Toil Discovery and Elimination
 
 * In practice - applying what you’ve learned
   * Automation simulation [lab]()
@@ -62,7 +62,7 @@
 
 ### Chapter 12
 
-## Part IV - Mastering the outage moments
+## Part IV - Mastering the Outage Moments
 
 ### Chapter 13
 
@@ -70,7 +70,7 @@
 
 ### Chapter 15
 
-## Part V - Looking into future trends and preparing for SRE interviews
+## Part V - Looking Into Future Trends and Preparing for SRE Interviews
 
 ### Chapter 16
 
