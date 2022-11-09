@@ -46,16 +46,19 @@
 ### Chapter 8 - The Reliable Architecture: Systems Strategy and Design
 
 * In practice - applying what you’ve learned
-  * Scaling out simulation [lab]()
+  * Autoscaling simulation [lab](./Chapter-8/autoscaling-simulation-lab.md)
 
 ### Chapter 9
+
+* In practice - applying what you’ve learned
+  * Automation simulation [lab]()
 
 ### Chapter 10
 
 ### Chapter 11
 
 * In practice - applying what you've learned
-  * Understanding orchestrated worker reliabity and retries [lab](./Chapter-11/readme.md)
+  * Understanding orchestrated worker reliability and retries [lab](./Chapter-11/readme.md)
 
 ### Chapter 12
 
