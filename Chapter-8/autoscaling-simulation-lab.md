@@ -6,7 +6,7 @@
 
 * Learn how to use `Terraform` as an Infrastructure as Code (IaC) tool for `Google Cloud Platform`
 
-* Learn how to `autoscaling` and `load balancing` works on GCP using `Terraform`
+* Learn how `autoscaling` and `load balancing` works on GCP using `Terraform`
 
 ### Pre-requisite knowledge
 

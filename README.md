@@ -46,20 +46,23 @@
 ### Chapter 8 - The Reliable Architecture: Systems Strategy and Design
 
 * In practice - applying what you’ve learned
-  * Scaling out simulation [lab]()
+  * Autoscaling simulation [lab](./Chapter-8/autoscaling-simulation-lab.md)
 
-### Chapter 9
+### Chapter 9 - The Valued Automation: Toil Discovery and Elimination
+
+* In practice - applying what you’ve learned
+  * Automation simulation [lab]()
 
 ### Chapter 10
 
 ### Chapter 11
 
 * In practice - applying what you've learned
-  * Understanding orchestrated worker reliabity and retries [lab](./Chapter-11/readme.md)
+  * Understanding orchestrated worker reliability and retries [lab](./Chapter-11/readme.md)
 
 ### Chapter 12
 
-## Part IV - Mastering the outage moments
+## Part IV - Mastering the Outage Moments
 
 ### Chapter 13
 
@@ -67,7 +70,7 @@
 
 ### Chapter 15
 
-## Part V - Looking into future trends and preparing for SRE interviews
+## Part V - Looking Into Future Trends and Preparing for SRE Interviews
 
 ### Chapter 16
 
