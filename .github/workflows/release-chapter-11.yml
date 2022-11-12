@@ -1,0 +1,57 @@
+name: Release Chapter 10 as Zip Archive
+on:
+  workflow_dispatch:
+    branches: [ test-release, main ]
+  push:
+    branches: [ test-release. main ]
+env:
+  CHAPTER: 10
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: create tag
+      shell: bash
+      id: tag
+      run: echo "tag=Chapter-10-$(date +'%Y%m%d')" >> $GITHUB_ENV
+    - name: create release name
+      shell: bash
+      id: release
+      run: echo "release_name=${{ github.event.repository.name }}-chapter-${{ env.CHAPTER }}" >> $GITHUB_ENV
+    - name: display variables
+      shell: bash
+      run: |
+        echo "tag=${{ env.release_name }}"
+        echo "release=${{ env.release_name }}"
+    - name: Archive Release
+      uses: thedoctor0/zip-release@main
+      with:
+        type: 'zip'
+        filename: '${{ env.release_name }}.zip'
+        files: 'Chapter-${{ env.CHAPTER }}\*'
+    - name: Delete Tag and Release
+      uses: dev-drprasad/delete-tag-and-release@v0.2.0
+      with:
+        delete_release: true # default: false
+        tag_name: ${{ env.release_name }}
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      with:
+        release_name: '${{ env.release_name }}'
+        tag_name: ${{ env.release_name }}
+        draft: false
+        prerelease: false
+    - name: Upload Release Asset
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+        asset_path: '${{ env.release_name }}.zip'
+        asset_name: '${{ env.release_name }}.zip'
+        asset_content_type: application/zip
