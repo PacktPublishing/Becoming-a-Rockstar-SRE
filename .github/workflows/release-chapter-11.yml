@@ -31,8 +31,8 @@ jobs:
       with:
         type: 'zip'
         filename: '${{ env.release_name }}.zip'
-        directory: '.'
-        path: 'Chapter-${{ env.CHAPTER }}'
+        path: '.'
+        directory: 'Chapter-${{ env.CHAPTER }}'
     - name: Delete Tag and Release
       uses: dev-drprasad/delete-tag-and-release@v0.2.0
       with:
