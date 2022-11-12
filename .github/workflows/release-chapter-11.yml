@@ -20,7 +20,7 @@ jobs:
     - name: create release name
       shell: bash
       id: release
-      run: echo "release_name=${{ github.event.repository.name }}-chapter-${{ env.CHAPTER }}" >> $GITHUB_ENV
+      run: echo "release_name=${{ github.event.repository.name }}-Chapter-${{ env.CHAPTER }}" >> $GITHUB_ENV
     - name: display variables
       shell: bash
       run: |
@@ -31,7 +31,8 @@ jobs:
       with:
         type: 'zip'
         filename: '${{ env.release_name }}.zip'
-        files: 'Chapter-${{ env.CHAPTER }}\*'
+        directory: '.'
+        path: 'Chapter-${{ env.CHAPTER }}'
     - name: Delete Tag and Release
       uses: dev-drprasad/delete-tag-and-release@v0.2.0
       with:
