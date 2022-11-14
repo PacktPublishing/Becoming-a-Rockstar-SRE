@@ -53,9 +53,13 @@
 * In practice - applying what you’ve learned
   * Automation simulation [lab]()
 
-### Chapter 10
+### Chapter 10 - The Exposed Pipeline: GitOps Essentials
 
-### Chapter 11
+* In practice - applying what you've learned
+  * Basic GitOps [lab](./Chapter-10/aws-sam/README.md)
+  * Advanced GitOps [lab](./Chapter-10/argocd/gitops-sim-lab.md)
+
+### Chapter 11 - The Worker Bees: Orchestration of Serverless, Containers, and Kubernetes
 
 * In practice - applying what you've learned
   * Understanding orchestrated worker reliability and retries [lab](./Chapter-11/readme.md)
