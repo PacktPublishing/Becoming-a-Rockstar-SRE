@@ -55,7 +55,7 @@ gcloud container clusters get-credentials gitops-sim \
  --zone <your_closest_region> --project <your_project_id>
 ```
 
-### Contents
+### Lab Contents
 
 * Argo CD
 
@@ -69,7 +69,7 @@ There's a dummy Node.js API available as K8s manifest files [here](https://githu
 image: rod4n4m1/node-api:0.1.2
 ```
 
-* Folder: `argocd`
+* Folder contents: `argocd`
 
 | **File / folder** | **Description** |
 |:--------------------------------|:--------------------------------|
@@ -82,7 +82,9 @@ image: rod4n4m1/node-api:0.1.2
 
 ### Installation
 
-* Argo CD
+* Install Argo CD
+
+This automation script will deploy the latest stable Argo CD relase to a K8s cluster under the `argocd` namespace.
 
 ```shell
 cd argo-cd
@@ -94,7 +96,7 @@ cd argo-cd
 
 ### Configuration
 
-* Environmental Variables
+* Change environmental variables accordingly
 
 **process.env**
 
@@ -109,11 +111,17 @@ export APP_REPO_PATH="simple-node-api"
 
 ### Deployment
 
-* Simple Node API
+* Deploy a Simple Node.js API
+
+This will deploy a K8s app as an Argo CD app to the cluster where it's running. An Argo CD app synchronizes with IaC and app manifest files in a GitHub repo.
 
 ```shell
 cd argo-cd
 ./deploy.sh
 ```
+
+### Explanations
+
+Please check the book chapter X for explanations of the concepts applied in this lab.
 
 ## End of document
