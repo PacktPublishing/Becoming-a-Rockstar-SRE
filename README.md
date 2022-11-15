@@ -51,7 +51,7 @@
 ### Chapter 9 - The Valued Automation: Toil Discovery and Elimination
 
 * In practice - applying what you’ve learned
-  * Automation simulation [lab]()
+  * Automation simulation [lab](./Chapter-9/automation-simulation-lab.md)
 
 ### Chapter 10 - The Exposed Pipeline: GitOps Essentials
 
