@@ -12,7 +12,7 @@
 
 *	Familiarity with cloud computing and cloud platforms
 
-*	Basic understanding of Terraform
+*	Basic understanding of `Terraform`
 
 ### Cloud Platform
 

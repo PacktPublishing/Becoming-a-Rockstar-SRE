@@ -4,11 +4,11 @@
 
 ### Learning objectives
 
-* Learn about software bill of materials (SBOM) for containers
+* Learn about `software bill of materials` (SBOM) for containers
 
-* Learn how to automate application build process
+* Learn how to automate `application build` process
 
-* Bonus lab: automate a security health checking for a Kubernetes cluster
+* Bonus lab: automate a `security health checking` for a Kubernetes cluster
 
 ### Pre-requisite knowledge
 

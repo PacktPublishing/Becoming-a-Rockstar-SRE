@@ -57,7 +57,7 @@
 
 * In practice - applying what you've learned
   * Basic GitOps [lab](./Chapter-10/aws-sam/README.md)
-  * Advanced GitOps [lab](./Chapter-10/argocd/gitops-sim-lab.md)
+  * Advanced GitOps [lab](./Chapter-10/argocd/README.md)
 
 ### Chapter 11 - The Worker Bees: Orchestration of Serverless, Containers, and Kubernetes
 
