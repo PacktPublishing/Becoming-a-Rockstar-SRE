@@ -1,4 +1,4 @@
-# Becoming an SRE Rockstar
+# Becoming a Rockstar SRE
 
 ## Chapter 8 - Autoscaling Simulation Lab
 

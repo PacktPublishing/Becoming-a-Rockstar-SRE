@@ -1,4 +1,6 @@
-# api
+# Becoming a Rockstar SRE
+
+## API
 
 This is a sample template for api - Below is a brief explanation of what we have generated for you:
 

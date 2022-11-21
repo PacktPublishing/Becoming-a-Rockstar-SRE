@@ -1,4 +1,4 @@
-# Becoming an SRE Rockstar
+# Becoming a Rockstar SRE
 
 ## Chapter 9 - Automation Simulation Lab
 

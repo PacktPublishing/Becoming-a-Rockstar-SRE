@@ -1,4 +1,4 @@
-# Becoming an SRE Rockstar
+# Becoming a Rockstar SRE
 
 ### Chapter 11 - The Worker Bees - Orchestrations of Serverless, containers and Kubernetes Lab
 
@@ -16,16 +16,16 @@
 
 * Installation of software to install Gitpod add on for your browser
 
-### To run this lab, you need to install Gitpod's Browser Extension 
+### To run this lab, you need to install Gitpod's Browser Extension
 
 * Download and install the [Gitpod Browser Extension](https://www.gitpod.io/docs/configure/user-settings/browser-extension)
 
 * Launch Gitpod on this repo using the Gitpod button in the upper right of the repo page
 
-* In the Terminal, download the Golang dependencies by typing in 
+* In the Terminal, download the Golang dependencies by typing in
 ````
 cd Chapter-11
-go get && go build ./... 
+go get && go build ./...
 ````
 * Run the test application
 ````

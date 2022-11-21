@@ -1,7 +1,7 @@
-# Becoming an SRE Rockstar
+# Becoming a Rockstar SRE
 **Electrify your SRE mindset to create the perfect ballad of reliability, resiliency, and efficiency**
 
-* **Becoming an SRE Rockstar**, published by `Packt`
+* **Becoming a Rockstar SRE**, published by `Packt`
 * ISBN: `978-1-80323-922-4`
 * Author: `Jeremy Proffitt`
 * Co-author: `Rod Anami`

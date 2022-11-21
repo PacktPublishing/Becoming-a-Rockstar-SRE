@@ -1,4 +1,4 @@
-# Becoming an SRE Rockstar
+# Becoming a Rockstar SRE
 
 ## Chapter 10 - Advanced GitOps Lab
 
