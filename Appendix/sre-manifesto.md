@@ -14,6 +14,8 @@ We believe we can create a more unified, concise, and solid SRE persona by stati
 
 * SREs identify, measure, and eliminate `toil` arising from operational and engineering work.
 
+* SREs implement `test cases`, execute software `delivery tests`, and stay ahead with `capacity planning`.
+
 We welcome anyone to use this **manifesto** at will as we made it public. We will review this **manifesto** and update it in this repository every year.
 
 `August 22, 2022`.

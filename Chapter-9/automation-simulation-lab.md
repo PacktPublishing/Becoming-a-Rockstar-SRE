@@ -8,8 +8,6 @@
 
 * Learn how to automate `application build` process
 
-* Bonus lab: automate a `security health checking` for a Kubernetes cluster
-
 ### Pre-requisite knowledge
 
 * Familiarity with JavaScript and Node.js

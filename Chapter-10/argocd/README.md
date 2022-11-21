@@ -84,7 +84,7 @@ image: rod4n4m1/node-api:0.1.2
 
 * Install Argo CD
 
-This automation script will deploy the latest stable Argo CD relase to a K8s cluster under the `argocd` namespace.
+This automation script will deploy the latest stable Argo CD release to a K8s cluster under the `argocd` namespace.
 
 ```shell
 cd argo-cd
@@ -109,6 +109,8 @@ export APP_REPO_URL="https://github.com/kyndryl-open-source/gitops-app-examples.
 export APP_REPO_PATH="simple-node-api"
 ```
 
+* You can **fork* the above repository if you want to modify the application image and version. Under a `GitOps` approach, all changes to the application or infrastructure is made to the GitHub repository and not on the K8s cluster directly.
+
 ### Deployment
 
 * Deploy a Simple Node.js API
@@ -119,6 +121,20 @@ This will deploy a K8s app as an Argo CD app to the cluster where it's running. 
 cd argo-cd
 ./deploy.sh
 ```
+
+### Usage
+
+* You can access the **Argo CD** console by checking the `LoadBalancer` service IP address:
+
+`kubectl get svc -n argocd`
+
+* Open a browser with the following ULR: `http://<load_balancer_ip>`
+
+* Log into the console using the `admin` username and its initial password
+
+* The `deploy.sh` script have created an Argo CD app that synchronizes with a GitHub repo
+
+* If you have forked the application repository, you can change the image and version, then resynchronize the Argo CD app
 
 ### Explanations
 
