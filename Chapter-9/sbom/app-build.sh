@@ -4,8 +4,7 @@ export VERSION="0.1.3"
 export USERNAME="rod4n4m1"
 export APPNAME="node-api"
 export PASSWORD="xxxxxxxx"
-
-# Buid the application container image and push it to the repository
+# Build the application container image and push it to the repository
 docker login -u $USERNAME -p $PASSWORD
 docker build . -t ${USERNAME}/${APPNAME}:${VERSION}
 docker push ${USERNAME}/${APPNAME}:${VERSION}

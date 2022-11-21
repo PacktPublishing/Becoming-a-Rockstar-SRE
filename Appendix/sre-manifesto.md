@@ -8,9 +8,11 @@ We believe we can create a more unified, concise, and solid SRE persona by stati
 
 * SREs guarantee all systems and applications are `observable` and under `monitoring`.
 
-* SREs manage systems, services, and Infrastructure to learn how to `automate toil`.
+* SREs manage systems, services, and infrastructure to learn how to `automate toil`.
 
 * SREs use `data science` and apply `statistical methods` to understand observability data.
+
+* SREs identify, measure, and eliminate `toil` arising from operational and engineering work.
 
 We welcome anyone to use this **manifesto** at will as we made it public. We will review this **manifesto** and update it in this repository every year.
 
