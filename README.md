@@ -6,7 +6,7 @@
 * Author: `Jeremy Proffitt`
 * Co-author: `Rod Anami`
 
-**Disclaimer:** The practical exercises and labs below have been designed as an integral part of the _Becoming an SRE Rockstar_ book. We recommend using these repository materials in conjunction with the book chapter contents.
+**Disclaimer:** The practical exercises and labs below have been designed as an integral part of the _Becoming a Rockstar SRE_ book. We recommend using these repository materials in conjunction with the book chapter contents.
 
 ## Part I - Understanding the basics of who, what and why
 
