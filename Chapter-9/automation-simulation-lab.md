@@ -12,7 +12,7 @@
 
 * Familiarity with JavaScript and Node.js
 
-* Basic understanding of containers and Docker
+* Basic understanding of containers and `Docker`
 
 ### Docker
 
@@ -33,7 +33,6 @@ Folder: `sbom`
 | server.js | `Node.js simple API application used in this lab` |
 | vulnerabilities.grype | `grype output with vulnerabilities scanned in the sbom.spdx.json content` |
 | | |
-
 
 ### Installation
 
@@ -57,7 +56,6 @@ export PASSWORD="xxxxxxxx"
 ```
 
 2. Replace `username` and `password` for the respective values from the Docker account that you created.
-
 
 ### Usage
 

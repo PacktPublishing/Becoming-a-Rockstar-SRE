@@ -10,9 +10,9 @@
 
 ### Pre-requisite knowledge
 
-*	Familiarity with cloud computing and cloud platforms
+* Familiarity with cloud computing and cloud platforms
 
-*	Basic understanding of `Terraform`
+* Basic understanding of `Terraform`
 
 ### Cloud Platform
 
@@ -52,7 +52,6 @@ Folder: `terraform`
 |:--------------------------------|:--------------------------------|
 | main.tf | `Terraform configuration - an IaC that declares autoscaling instances pool and a load balancer` |
 | | |
-
 
 ### Installation
 

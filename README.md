@@ -1,7 +1,9 @@
 # Becoming a Rockstar SRE
-**Electrify your SRE mindset to create the perfect ballad of reliability, resiliency, and efficiency**
+
+## Book overview
 
 * **Becoming a Rockstar SRE**, published by `Packt`
+* _Electrify your SRE mindset to create the perfect ballad of reliability, resiliency, and efficiency_
 * ISBN: `978-1-80323-922-4`
 * Author: `Jeremy Proffitt`
 * Co-author: `Rod Anami`
@@ -22,7 +24,7 @@
 
 * There's no practical exercises for this chapter.
 
-## Part II - Implementing Observability for SRE
+## Part II - Implementing Observability for site reliability engineering
 
 ### Chapter 4 - The Essential Observability: Metrics, Events, Logs, and Traces (MELT)
 
@@ -64,7 +66,10 @@
 * In practice - applying what you've learned
   * Understanding orchestrated worker reliability and retries [lab](./Chapter-11/readme.md)
 
-### Chapter 12
+### Chapter 12 - The Final Exam: Tests and Capacity Planning
+
+* In practice - applying what you've learned
+  * Testing simulation [lab](./Chapter-12/testing-simulation-lab.md)
 
 ## Part IV - Mastering the Outage Moments
 
