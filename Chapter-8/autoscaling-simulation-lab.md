@@ -78,7 +78,6 @@ You can consult the available regions and zones on this [document](https://cloud
 
 2. Replace `credentials` filename per the one you have downloaded from GCP console. Fix the project id, region, and zone in the same block.
 
-
 ### Usage
 
 * Terraform

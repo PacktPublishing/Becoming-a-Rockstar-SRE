@@ -10,11 +10,11 @@
 
 ### Pre-requisite knowledge
 
-*	Familiarity with Kubernetes
+* Familiarity with Kubernetes
 
-*	Basic notions on Node.js (JavaScript) programming language
+* Basic notions on Node.js (JavaScript) programming language
 
-*	Good understanding of YAML (Yet Another Markup Language)
+* Good understanding of YAML (Yet Another Markup Language)
 
 ### Kubernetes cluster
 
@@ -39,7 +39,7 @@ In case you use a GCP account for this lab, we provided the Google Kubernetes En
 
 You can create a K8s cluster for this lab with the following commands:
 
-```
+```shell
 gcloud auth login
 gcloud container clusters create gitops-sim --no-enable-autoupgrade --enable-service-externalips \
  --enable-kubernetes-alpha --region=<your_closest_region> --cluster-version= v1.24.6-gke.1500 \
@@ -50,7 +50,7 @@ gcloud container clusters create gitops-sim --no-enable-autoupgrade --enable-ser
 
 You can configure your local `kubectl` environment and credentials with the following command:
 
-```
+```shell
 gcloud container clusters get-credentials gitops-sim \
  --zone <your_closest_region> --project <your_project_id>
 ```
