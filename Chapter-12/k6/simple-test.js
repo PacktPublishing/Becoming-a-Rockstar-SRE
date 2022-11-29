@@ -7,6 +7,6 @@ export const options = {
 };
 
 export default function () {
-  http.get('http://${__ENV.GKE_ALB}');
+  http.get(`http://${__ENV.GKE_ALB_IP}:${__ENV.GKE_ALB_PORT}`);
   sleep(1);
 }
