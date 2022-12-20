@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-game-svc
+spec:
+  type: NodePort
+  selector:
+    app: web-game
+  ports:
+  - protocol: TCP
+    port: 8082
+    targetPort: 8082
+    nodePort: 31082
