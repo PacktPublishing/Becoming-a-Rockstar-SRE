@@ -83,6 +83,12 @@
 
 ### Chapter 16
 
+* In practice - employing the wheel-of-misfortune game
+  * Roleplaying simulation [lab](./Chapter-16/roleplaying/roleplaying-simulation-lab.md)
+
+* In practice - injecting chaos into systems
+  * Chaos simulation [lab](./Chapter-16/chaos/chaos-simulation-lab.md)
+
 ### Chapter 17
 
 ### Appendix

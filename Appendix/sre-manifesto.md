@@ -4,7 +4,7 @@ We, the `Becoming an SRE Rockstar` authors and technical reviewers, met together
 
 We believe we can create a more unified, concise, and solid SRE persona by stating their essential responsibilities:
 
-* SREs make sure their `applications` are `reliable` and not just available and resilient.
+* SREs make sure their `systems` are `reliable` and not just available and resilient.
 
 * SREs guarantee all systems and applications are `observable` and under `monitoring`.
 
@@ -15,6 +15,8 @@ We believe we can create a more unified, concise, and solid SRE persona by stati
 * SREs identify, measure, and eliminate `toil` arising from operational and engineering work.
 
 * SREs implement `test cases`, execute software `delivery tests`, and stay ahead with `capacity planning`.
+
+* SREs employ `chaos engineering` to unveil systemic weaknesses in production.
 
 We welcome anyone to use this **manifesto** at will as we made it public. We will review this **manifesto** and update it in this repository every year.
 
