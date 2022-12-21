@@ -2,21 +2,25 @@
 
 ## About This Repository
 
-**Disclaimer:** The practical exercises and labs below have been designed as an integral part of the _Becoming a Rockstar SRE_ book. We recommend using these repository materials in conjunction with the book chapter contents.
+This repository contains companion learning activities for the _Becoming a Rockstar SRE_ book.
 
-**Licensing:** All materials inside this repository are licensed using MIT public [licence](./LICENSE.md)
+**Disclaimer:** The practical exercises and labs below have been designed to be **integral** to the _Becoming a Rockstar SRE_ book. We recommend using these learning materials in conjunction with the book chapter contents.
+
+**Licensing:** All materials inside this repository are licensed under **MIT** public [licence](./LICENSE.md)
 
 ## Book overview
 
-|               |                                                           |                                  |
-|---------------|-----------------------------------------------------------|-----------------|
-| **Title**     | Becoming a Rockstar SRE, published by `Packt`             ||
+![book-cover](./images/becoming-a-rockstar-sre.png)
+
+| | | |
+|:--------------|:--------------|:--------------|
+| **Title** | Becoming a Rockstar SRE | Published by `Packt`|
 | **Sub-title** | _Electrify your SRE mindset to create the perfect ballad of reliability, resiliency, and efficiency_ ||
-| **ISBN-13**   | `978-1-80323-922-4`                                       ||
-| **ISBN-10**   | `1-80323-922-0`                                           ||
-| **Author**    | `Jeremy Proffitt`                                         | GitHub [profile](https://github.com/JeremyProffitt) |
-| **Co-author** | `Rod Anami`                                               | GitHub [profile](https://github.com/rod4n4m1) |
-| **Details**   | Amazon.com [link](https://a.co/d/c6cWRzh)                 ||
+| **ISBN-13** | `978-1-80323-922-4` | |
+| **ISBN-10** | `1-80323-922-0` | |
+| **Author** | `Jeremy Proffitt` | GitHub [profile](https://github.com/JeremyProffitt) |
+| **Co-author** | `Rod Anami` | GitHub [profile](https://github.com/rod4n4m1) |
+| **Details** | Amazon.com [link](https://a.co/d/c6cWRzh) | |
 
 ## Table of Contents
 
