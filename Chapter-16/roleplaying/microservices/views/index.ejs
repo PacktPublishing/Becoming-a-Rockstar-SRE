@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Web Game</title>
+  <title><%= appName %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -10,13 +10,13 @@
 <body>
   <div style="margin:100px;">
     <div class="jumbotron"  style="padding:40px;">
-      <h1>Web Game</h1>
-      <h2>A role-playing scenario app!</h2>
+      <h1><%= appName %></h1>
+      <h2><%= appDescription %></h2>
       <p>This is part of the Becoming a Rockstar SRE book.</p>
       <br>
       <table class="table table-hover">
         <thead>
-            <tr>
+            <tr class="<%= styleClass %>">
                 <th>Env variable</th>
                 <th>Value</th>
             </tr>

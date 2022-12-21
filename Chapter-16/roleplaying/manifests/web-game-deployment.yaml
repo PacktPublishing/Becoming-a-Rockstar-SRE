@@ -26,6 +26,10 @@ spec:
         env:
           - name: PORT
             value: "8082"
+          - name: APP_NAME
+            value: "Web Game"
+          - name: APP_DESCRIPTION
+            value: "A role-playing scenario app!"
           - name: K8_NODE_NAME
             valueFrom:
               fieldRef:

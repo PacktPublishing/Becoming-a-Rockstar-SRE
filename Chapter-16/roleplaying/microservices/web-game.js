@@ -15,15 +15,21 @@ const K8_POD_NAME = process.env.K8_POD_NAME || "Undefined";
 const K8_POD_NAMESPACE = process.env.K8_POD_NAMESPACE || "Undefined";
 const K8_POD_SERVICE_ACCOUNT = process.env.K8_POD_SERVICE_ACCOUNT || "Undefined";
 const K8_POD_IP = process.env.K8_POD_IP || "Undefined";
+const STYLE_CLASS = process.env.STYLE_CLASS || "success";
+const APP_NAME = process.env.APP_NAME || "No Name";
+const APP_DESCRIPTION = process.env.APP_DESCRIPTION || "No Description";
 
 // App
 const app = express();
-
+// Views
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-
+// Root path
 router.get('/',function(req,res){
   res.render('index', {
+    appName: APP_NAME,
+    appDescription: APP_DESCRIPTION,
+    styleClass: STYLE_CLASS,
     envarName1: 'Node Name',
     envarName2: 'Pod Name',
     envarName3: 'Pod Namespace',
