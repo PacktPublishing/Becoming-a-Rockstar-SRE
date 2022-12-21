@@ -1,15 +1,45 @@
 # Becoming a Rockstar SRE
 
-## Book overview
-
-* **Becoming a Rockstar SRE**, published by `Packt`
-* _Electrify your SRE mindset to create the perfect ballad of reliability, resiliency, and efficiency_
-* ISBN: `978-1-80323-922-4`
-* Author: `Jeremy Proffitt`
-* Co-author: `Rod Anami`
-* Amazon.com [link](https://a.co/d/c6cWRzh)
+## About This Repository
 
 **Disclaimer:** The practical exercises and labs below have been designed as an integral part of the _Becoming a Rockstar SRE_ book. We recommend using these repository materials in conjunction with the book chapter contents.
+
+**Licensing:** All materials inside this repository are licensed using MIT public [licence](./LICENSE.md)
+
+## Book overview
+
+|               |                                                           |                                  |
+|---------------|-----------------------------------------------------------|-----------------|
+| **Title**     | Becoming a Rockstar SRE, published by `Packt`             ||
+| **Sub-title** | _Electrify your SRE mindset to create the perfect ballad of reliability, resiliency, and efficiency_ ||
+| **ISBN-13**   | `978-1-80323-922-4`                                       ||
+| **ISBN-10**   | `1-80323-922-0`                                           ||
+| **Author**    | `Jeremy Proffitt`                                         | GitHub [profile](https://github.com/JeremyProffitt) |
+| **Co-author** | `Rod Anami`                                               | GitHub [profile](https://github.com/rod4n4m1) |
+| **Details**   | Amazon.com [link](https://a.co/d/c6cWRzh)                 ||
+
+## Table of Contents
+
+| **Chapter** | **Title** | **Bookmark** |
+|-------------|-----------|--------------|
+| Chapter 1 | The SRE Job Role – Activities and Responsibilities | [Link](#chapter-1-the-sre-job-role--activities-and-responsibilities) |
+| Chapter 2 | The Fundamental Numbers - Reliability Statistics | [Link](#chapter-2-the-fundamental-numbers---reliability-statistics) |
+| Chapter 3 | The Imperfect Habits - Duct Tape Architecture and Spaghetti Coding | [Link](#chapter-3-the-imperfect-habits---duct-tape-architecture-and-spaghetti-coding) |
+| Chapter 4 | The Essential Observability - Metrics, Events, Logs, and Traces (MELT) | [Link](#chapter-4-the-essential-observability---metrics-events-logs-and-traces-melt) |
+| Chapter 5 | The Resolution Path - Master Troubleshooting | [Link](#chapter-5-the-resolution-path---master-troubleshooting) |
+| Chapter 6 | The Operational Framework: Managing Infrastructure and Systems | [Link](#chapter-6---the-operational-framework-managing-infrastructure-and-systems) |
+| Chapter 7 | The Data Consumed - Observability Data Science | [Link](#chapter-7-the-data-consumed---observability-data-science) |
+| Chapter 8 | The Reliable Architecture - Systems Strategy and Design | [Link](#chapter-8-the-reliable-architecture---systems-strategy-and-design) |
+| Chapter 9 | The Valued Automation - Toil Discovery and Elimination | [Link](#chapter-9-the-valued-automation---toil-discovery-and-elimination) |
+| Chapter 10 | The Exposed Pipeline - GitOps Essentials | [Link](#chapter-10-the-exposed-pipeline---gitops-essentials) |
+| Chapter 11 | The Worker Bees - Orchestration of Serverless, Containers, and Kubernetes | [Link](#chapter-11-the-worker-bees---orchestration-of-serverless-containers-and-kubernetes) |
+| Chapter 12 | The Final Exam - Tests and Capacity Planning | [Link](#chapter-12-the-final-exam---tests-and-capacity-planning) |
+| Chapter 13 | The First Thing - Runbooks and Low Noise Outage Notifications | [Link](#chapter-13-the-first-thing---runbooks-and-low-noise-outage-notifications) |
+| Chapter 14 | The Rapid Response - Outage Management Techniques | [Link](#chapter-14-the-rapid-response---outage-management-techniques) |
+| Chapter 15 | The Postmortem Cander - Long Term Resolution | [Link](#chapter-15-the-postmortem-cander---long-term-resolution) |
+| Chapter 16 | The Chaos Injector- Advanced Systems Stability | [Link](#chapter-16-the-chaos-injector--advanced-systems-stability) |
+| Chapter 17 | The Interview Advice - Hiring and Being Hired | [Link](#chapter-17-the-interview-advice---hiring-and-being-hired) |
+| Appendix | Additional book contents | [Link](#appendix) |
 
 ## Part I - Understanding the basics of who, what and why
 
