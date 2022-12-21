@@ -59,9 +59,13 @@ Folder: `microservices`
 
 | **File / folder** | **Description** |
 |:--------------------------------|:--------------------------------|
-| simple-test.js | `A k6 simple test script example` |
-| load-test.js | `A k6 load test script example` |
-| process.env | `Environmental variables used by k6 test scripts` |
+| docker-build.sh | `Shell script used to build and push the Docker image` |
+| Dockerfile | `Docker commands to build the image` |
+| package.json | `npm manifest file with project information` |
+| package-lock.json | `npm manifest file with locked dependencies and versions` |
+| static | `Folder with static HTML for the web app` |
+| views | `Folder with dynamic HTML for the web app` |
+| web-game.js | `A simple Node.js web app` |
 | | |
 
 Folder: `manifests`
@@ -96,13 +100,43 @@ kubectl apply -f ./manifests/
 
 * Application
 
-1. Run the simple test by issuing the following command:
+1. Check if the pods are running. You can run the following command:
 
-`k6 run simple-test.js`
+`kubectl get pods`
 
-2. Run the load test by using this command:
+2. Find out what's wrong with the Deployment.
 
-`k6 run load-test.js`
+* Pro-tip: You see more information with `kubectl describe pod <pod-id>`
+
+3. Change the web-game-deployment.yaml file to fix it, then delete the previous Deployment object and create a new one
+
+```shell
+vi web-game-deployment.yaml
+kubectl delete deployment web-game-deployment
+kubectl apply -f web-game-deployment.yaml
+```
+
+* **Pro-tip:** you can use the following kubectl command to change the image of a Deployment.
+
+`kubectl set image deployment/web-game web-game=$image:$version`
+
+4. Try to open the application from your laptop browser using the LoadBalancer service IP address and port
+
+`http://<load-balancer-ip>:60000/`
+
+5. Figure out what's wrong with the LoadBalancer service
+
+6. Change the web-game-lb-service.yaml file to fix it, then delete the previous LoadBalancer object and create a new one:
+
+```shell
+vi web-game-lb-service.YAML
+kubectl delete service web-game-lb-service
+kubectl apply -f web-game-lb-service.yaml
+```
+
+* **Pro-tip:** you can use the following kubectl command to patch a service.
+
+`kubectl patch service web-game-lb -p '{"spec":{"selector":{"app": "web-game"}}}'`
 
 ### Explanations
 
