@@ -4,9 +4,9 @@
 
 ### Learning objectives
 
-* Learn how to deploy an app using GitOps approach
+* Learn how to deploy an app using `GitOps` approach
 
-* Learn how use Argo CD as a GitOps platform
+* Learn how use Argo CD as a `GitOps` platform
 
 ### Pre-requisite knowledge
 
@@ -29,7 +29,7 @@ In case you use a GCP account for this lab, we provided the Google Kubernetes En
 | GKE mode | `Standard with static K8s version` |
 | Location type | `Zonal` |
 | Release channel | `None` |
-| Kubernetes version | `v1.24.6-gke.1500` |
+| Kubernetes version | `v1.24.x` |
 | Number of nodes | `3` |
 | Machine type | `e2-medium` |
 | Image type | `cos_containerd` |
@@ -65,7 +65,7 @@ Argo CD is installed through its default K8s manifest file located [here](https:
 
 There's a dummy Node.js API available as K8s manifest files [here](https://github.com/kyndryl-open-source/gitops-app-examples.git). It points to a public Docker image located at the Docker Hub.
 
-```
+```yaml
 image: rod4n4m1/node-api:0.1.2
 ```
 
@@ -78,7 +78,6 @@ image: rod4n4m1/node-api:0.1.2
 | README.d | `This file` |
 | process.env | `Example of enviromental variables definition to configure the deploy.sh script` |
 | | |
-
 
 ### Installation
 
@@ -93,12 +92,11 @@ cd argo-cd
 
 * More information [here](https://argo-cd.readthedocs.io/en/stable/getting_started/)
 
-
 ### Configuration
 
-* Change environmental variables accordingly
+1. Change environmental variables accordingly
 
-**process.env**
+* File: **process.env**
 
 ```shell
 #!/bin/bash
@@ -113,7 +111,7 @@ export APP_REPO_PATH="simple-node-api"
 
 ### Deployment
 
-* Deploy a Simple Node.js API
+1. Deploy a Simple Node.js API
 
 This will deploy a K8s app as an Argo CD app to the cluster where it's running. An Argo CD app synchronizes with IaC and app manifest files in a GitHub repo.
 
@@ -124,13 +122,13 @@ cd argo-cd
 
 ### Usage
 
-* You can access the **Argo CD** console by checking the `LoadBalancer` service IP address:
+1. You can access the **Argo CD** console by checking the _LoadBalancer_ service IP address
 
 `kubectl get svc -n argocd`
 
-* Open a browser with the following ULR: `http://<load_balancer_ip>`
+2. Open a browser with the following ULR: `http://<load_balancer_ip>`
 
-* Log into the console using the `admin` username and its initial password
+3. Log into the console using the `admin` username and its initial password
 
 * The `deploy.sh` script have created an Argo CD app that synchronizes with a GitHub repo
 
@@ -138,6 +136,6 @@ cd argo-cd
 
 ### Explanations
 
-Please check the book chapter X for explanations of the concepts applied in this lab.
+Please check the book chapter **X** for explanations of the concepts applied in this lab.
 
 ## End of document

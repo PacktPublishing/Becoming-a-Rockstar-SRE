@@ -13,76 +13,76 @@
 
 ## Part I - Understanding the basics of who, what and why
 
-### Chapter 1
+### Chapter 1: The SRE Job Role – Activities and Responsibilities
 
 * There's no practical exercises for this chapter.
 
-### Chapter 2
+### Chapter 2: The Fundamental Numbers - Reliability Statistics
 
 * There's no practical exercises for this chapter.
 
-### Chapter 3
+### Chapter 3: The Imperfect Habits - Duct Tape Architecture and Spaghetti Coding
 
 * There's no practical exercises for this chapter.
 
 ## Part II - Implementing Observability for site reliability engineering
 
-### Chapter 4 - The Essential Observability: Metrics, Events, Logs, and Traces (MELT)
+### Chapter 4: The Essential Observability - Metrics, Events, Logs, and Traces (MELT)
 
 * In practice - applying what you’ve learned
   * Observability simulation [lab](./Chapter-4/observability-simulation-lab.md)
 
-### Chapter 5
+### Chapter 5: The Resolution Path - Master Troubleshooting
 
 ### Chapter 6 - The Operational Framework: Managing Infrastructure and Systems
 
 * In practice - applying what you’ve learned
   * Provisioning simulation [lab](./Chapter-6/provisioning-simulation-lab.md)
 
-### Chapter 7 - The Data Consumed: The Observability Data Science
+### Chapter 7: The Data Consumed - Observability Data Science
 
 * In practice - applying what you’ve learned
   * Data analysis simulation [lab](./Chapter-7/data-analysis-simulation-lab.md)
 
 ## Part III - Applying architecture for reliability
 
-### Chapter 8 - The Reliable Architecture: Systems Strategy and Design
+### Chapter 8: The Reliable Architecture - Systems Strategy and Design
 
 * In practice - applying what you’ve learned
   * Autoscaling simulation [lab](./Chapter-8/autoscaling-simulation-lab.md)
 
-### Chapter 9 - The Valued Automation: Toil Discovery and Elimination
+### Chapter 9: The Valued Automation - Toil Discovery and Elimination
 
 * In practice - applying what you’ve learned
   * Automation simulation [lab](./Chapter-9/automation-simulation-lab.md)
 
-### Chapter 10 - The Exposed Pipeline: GitOps Essentials
+### Chapter 10: The Exposed Pipeline - GitOps Essentials
 
 * In practice - applying what you've learned
   * Basic GitOps [lab](./Chapter-10/aws-sam/README.md)
   * Advanced GitOps [lab](./Chapter-10/argocd/README.md)
 
-### Chapter 11 - The Worker Bees: Orchestration of Serverless, Containers, and Kubernetes
+### Chapter 11: The Worker Bees - Orchestration of Serverless, Containers, and Kubernetes
 
 * In practice - applying what you've learned
   * Understanding orchestrated worker reliability and retries [lab](./Chapter-11/readme.md)
 
-### Chapter 12 - The Final Exam: Tests and Capacity Planning
+### Chapter 12: The Final Exam - Tests and Capacity Planning
 
 * In practice - applying what you've learned
   * Testing simulation [lab](./Chapter-12/testing-simulation-lab.md)
 
 ## Part IV - Mastering the Outage Moments
 
-### Chapter 13
+### Chapter 13: The First Thing - Runbooks and Low Noise Outage Notifications
 
-### Chapter 14
+### Chapter 14: The Rapid Response - Outage Management Techniques
 
-### Chapter 15
+### Chapter 15: The Postmortem Cander - Long Term Resolution
 
 ## Part V - Looking Into Future Trends and Preparing for SRE Interviews
 
-### Chapter 16
+### Chapter 16: The Chaos Injector- Advanced Systems Stability
 
 * In practice - employing the wheel-of-misfortune game
   * Roleplaying simulation [lab](./Chapter-16/roleplaying/roleplaying-simulation-lab.md)
@@ -90,7 +90,7 @@
 * In practice - injecting chaos into systems
   * Chaos simulation [lab](./Chapter-16/chaos/chaos-simulation-lab.md)
 
-### Chapter 17
+### Chapter 17: The Interview Advice - Hiring and Being Hired
 
 ### Appendix
 
