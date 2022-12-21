@@ -20,17 +20,17 @@ The first lab part runs on any Cloud Platform that is supported by Terraform wit
 
 * Google Cloud Project Id
 
-1. You can login into your GCP account with the following command:
+1. You can login into your GCP account with the following command
 
 `gcloud auth login`
 
-2. Then you can create a project in the console or by issuing the following command:
+2. Then you can create a project in the console or by issuing the following command
 
 `gcloud projects create my-project --set-as-default`
 
 * Google Application Default Credentials
 
-1. To create the necessary credentials for the SDK, use this command:
+1. To create the necessary credentials for the SDK, use this command
 
 `gcloud auth application-default login`
 
@@ -38,9 +38,9 @@ More information at this [document](https://cloud.google.com/docs/authentication
 
 * Google Service Account Key
 
-1. To enable GCP and generate a service account key for the Terraform provider, please follow this [documentation](https://learn.hashicorp.com/tutorials/terraform/google-cloud-platform-build?in=terraform/gcp-get-started#set-up-gcp).
+1. To enable GCP and generate a service account key for the Terraform provider, please follow this [documentation](https://learn.hashicorp.com/tutorials/terraform/google-cloud-platform-build?in=terraform/gcp-get-started#set-up-gcp)
 
-2. Download your Service Account Key as JSON file and copy it to `terraform` directory.
+2. Download your Service Account Key as JSON file and copy it to `terraform` directory
 
 ### Contents
 
@@ -57,15 +57,15 @@ Folder: `terraform`
 
 * Terraform
 
-1. To install Terraform CLI, follow the details from [here](https://learn.hashicorp.com/tutorials/terraform/install-cli).
+1. To install Terraform CLI, follow the details from [here](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 
 ### Configuration
 
 * Terraform
 
-1. Change the provider configuration accordingly:
+1. Change the provider configuration accordingly
 
-```yaml
+```hcl
 provider "google" {
   credentials = file("project-service-account-key.json")
   project = "autoscaling-simulation-lab"
@@ -76,7 +76,7 @@ provider "google" {
 
 You can consult the available regions and zones on this [document](https://cloud.google.com/compute/docs/regions-zones).
 
-2. Replace `credentials` filename per the one you have downloaded from GCP console. Fix the project id, region, and zone in the same block.
+2. Replace `credentials` filename per the one you have downloaded from GCP console. Fix the project id, region, and zone in the same block
 
 ### Usage
 
@@ -93,7 +93,6 @@ terraform destroy
 
 ### Explanations
 
-Please check the book chapter VIII for explanations of the concepts applied in this lab.
-
+Please check the book chapter **VIII** for explanations of the concepts applied in this lab.
 
 ## End of the Document

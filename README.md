@@ -7,6 +7,7 @@
 * ISBN: `978-1-80323-922-4`
 * Author: `Jeremy Proffitt`
 * Co-author: `Rod Anami`
+* Amazon.com [link](https://a.co/d/c6cWRzh)
 
 **Disclaimer:** The practical exercises and labs below have been designed as an integral part of the _Becoming a Rockstar SRE_ book. We recommend using these repository materials in conjunction with the book chapter contents.
 

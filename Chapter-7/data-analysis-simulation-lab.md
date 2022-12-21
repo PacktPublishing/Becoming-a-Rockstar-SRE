@@ -4,7 +4,7 @@
 
 ### Learning objectives
 
-* Learn how to use Python NumPy and matplolib for statistical methods
+* Learn how to use Python `NumPy` and `matplolib` for statistical methods
 
 * Learn how to analyze a data set using Python code
 
@@ -35,17 +35,17 @@ Folder: `python`
 
 * Python and pip
 
-1. To install `python` and `pip`, check the documentation [here](https://www.python.org/downloads/).
+1. To install `python` and `pip`, check the documentation [here](https://www.python.org/downloads/)
 
 ### Configuration
 
 * Python
 
-1. Install `NumPy` package with the following command:
+1. Install `NumPy` package with the following command
 
   * `pip install numpy`
 
-2. Install `matplotlbi` library with this command:
+2. Install `matplotlbi` library with this command
 
   * `pip install matplolib`
 
@@ -67,6 +67,6 @@ python latency.py latency.csv
 
 ### Explanations
 
-Please check the book chapter VII for explanations of the concepts applied in this lab.
+Please check the book chapter **VII** for explanations of the concepts applied in this lab.
 
 ## End of document

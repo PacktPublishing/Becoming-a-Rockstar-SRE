@@ -38,15 +38,15 @@ Folder: `sbom`
 
 * SBOM
 
-1. To install `syft` CLI, follow the details from [here](https://github.com/anchore/syft#installation).
+1. To install `syft` CLI, follow the details from [here](https://github.com/anchore/syft#installation)
 
-2. To install `grype` CLI, use the instructions at this [link](https://github.com/anchore/grype#installation).
+2. To install `grype` CLI, use the instructions at this [link](https://github.com/anchore/grype#installation)
 
 ### Configuration
 
 * SBOM
 
-1. Change the enviromental variables accordingly inside `app-build.sh`:
+1. Change the enviromental variables accordingly inside `app-build.sh`
 
 ```shell
 export VERSION="0.1.3"
@@ -55,7 +55,7 @@ export APPNAME="node-api"
 export PASSWORD="xxxxxxxx"
 ```
 
-2. Replace `username` and `password` for the respective values from the Docker account that you created.
+2. Replace `username` and `password` for the respective values from the Docker account that you created
 
 ### Usage
 
@@ -68,6 +68,6 @@ cd sbom
 
 ### Explanations
 
-Please check the book chapter IX for explanations of the concepts applied in this lab.
+Please check the book chapter **IX** for explanations of the concepts applied in this lab.
 
 ## End of the Document

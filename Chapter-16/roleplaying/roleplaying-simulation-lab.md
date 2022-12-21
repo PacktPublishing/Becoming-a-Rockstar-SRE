@@ -61,7 +61,7 @@ Folder: `microservices`
 |:--------------------------------|:--------------------------------|
 | docker-build.sh | `Shell script used to build and push the Docker image` |
 | Dockerfile | `Docker commands to build the image` |
-| package.json | `npm manifest file with project information` |
+| package.json | `Node.js project metadata file that contains packages used by the application` |
 | package-lock.json | `npm manifest file with locked dependencies and versions` |
 | static | `Folder with static HTML for the web app` |
 | views | `Folder with dynamic HTML for the web app` |
@@ -104,11 +104,11 @@ kubectl apply -f ./manifests/
 
 `kubectl get pods`
 
-2. Find out what's wrong with the Deployment.
+2. Find out what's wrong with the _Deployment_.
 
 * Pro-tip: You see more information with `kubectl describe pod <pod-id>`
 
-3. Change the web-game-deployment.yaml file to fix it, then delete the previous Deployment object and create a new one
+3. Change the `web-game-deployment.yaml` file to fix it, then delete the previous _Deployment_ object and create a new one.
 
 ```shell
 vi web-game-deployment.yaml
@@ -116,17 +116,17 @@ kubectl delete deployment web-game-deployment
 kubectl apply -f web-game-deployment.yaml
 ```
 
-* **Pro-tip:** you can use the following kubectl command to change the image of a Deployment.
+* **Pro-tip:** you can use the following `kubectl` command to change the image of a _Deployment_.
 
 `kubectl set image deployment/web-game web-game=$image:$version`
 
-4. Try to open the application from your laptop browser using the LoadBalancer service IP address and port
+4. Try to open the application from your laptop browser using the _LoadBalancer_ service IP address and port
 
 `http://<load-balancer-ip>:60000/`
 
-5. Figure out what's wrong with the LoadBalancer service
+5. Figure out what's wrong with the _LoadBalancer_ service
 
-6. Change the web-game-lb-service.yaml file to fix it, then delete the previous LoadBalancer object and create a new one:
+6. Change the `web-game-lb-service.yaml` file to fix it, then delete the previous _LoadBalancer_ object and create a new one.
 
 ```shell
 vi web-game-lb-service.YAML
@@ -134,12 +134,12 @@ kubectl delete service web-game-lb-service
 kubectl apply -f web-game-lb-service.yaml
 ```
 
-* **Pro-tip:** you can use the following kubectl command to patch a service.
+* **Pro-tip:** you can use the following `kubectl` command to patch a service.
 
 `kubectl patch service web-game-lb -p '{"spec":{"selector":{"app": "web-game"}}}'`
 
 ### Explanations
 
-Please check the book chapter XVI for explanations of the concepts applied in this lab.
+Please check the book chapter **XVI** for explanations of the concepts applied in this lab.
 
 ## End of the Document

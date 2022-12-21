@@ -72,19 +72,12 @@ Folder: `litmus`
 | web-pod-delete.yaml | `A K8s manifest file to create a ChaosEngine based on the pod-delete ChaosExperiment` |
 | | |
 
-Folder: `solutions`
-
-| **File / folder** | **Description** |
-|:--------------------------------|:--------------------------------|
-| web-game-deployment-good.yaml | `A fixed K8s manifest file with a Deployement for a simple Node.js web app` |
-| web-game-lb-service-good.yaml | `A fixed K8s manifest file with a LoadBalancer type service for the app` |
-| | |
 
 ### Installation
 
 * Application
 
-1. You can deploy the Node.js web app to the K8s cluster with the following commands:
+1. You can deploy the Node.js web app to the K8s cluster with the following commands
 
 ```shell
 cd Chapter-16/chaos
@@ -101,15 +94,14 @@ service/web-app-svc created
 
 * LitmusChaos operator
 
-1. Install LitmusChaos operator by issuing the following command:
+1. Install LitmusChaos operator by issuing the following command
 
 `kubectl apply -f https://litmuschaos.github.io/litmus/litmus-operator-v2.14.0.yaml`
 
-2. Install pod-delete ChaosExperiment from the Chaos Hub:
+2. Install pod-delete _ChaosExperiment_ from the **Chaos Hub**
 
 ```shell
 kubectl apply -f https://hub.litmuschaos.io/api/chaos/2.14.0?file=charts/generic/pod-delete/experiment.yaml
-
 ```
 
 **Expected output:**
@@ -120,7 +112,7 @@ kubectl apply -f https://hub.litmuschaos.io/api/chaos/2.14.0?file=charts/generic
 
 * LitmusChaos operator
 
-1. Create a ServiceAccount for the ChaosEngine
+1. Create a _ServiceAccount_ for the _ChaosEngine_
 
 ```shell
 kubectl apply -f web-chaos-sa.yaml
@@ -131,11 +123,11 @@ rolebinding.rbac.authorization.k8s.io/web-chaos-sa created
 
 ### Usage
 
-1. Annotate the app to tag it for chaos experimentation:
+1. Annotate the app to tag it for chaos experimentation
 
 `kubectl annotate deploy/web-app litmuschaos.io/chaos="true"`
 
-2. Create a ChaosEngine based on pod-delete ChaosExperiment:
+2. Create a _ChaosEngine_ based on `pod-delete` _ChaosExperiment_
 
 `kubectl apply -f web-pod-delete.yaml`
 
@@ -143,18 +135,18 @@ rolebinding.rbac.authorization.k8s.io/web-chaos-sa created
 
 `chaosengine.litmuschaos.io/web-chaos created`
 
-3. Check if the pods are getting deleted by the ChaosEngine
+3. Check if the pods are getting deleted by the _ChaosEngine_
 
 `kubectl get pods`
 
-4. Verify how the app behaves during the experiment. Use a observability platform like the one discussed in the Chapter 4.
+4. Verify how the app behaves during the experiment. Use a observability platform like the one discussed in the Chapter 4
 
-5. Check the ChaosResult report
+5. Check the _ChaosResult_ report
 
 `kubectl describe chaosresult web-chaos-pod-delete`
 
 ### Explanations
 
-Please check the book chapter XVI for explanations of the concepts applied in this lab.
+Please check the book chapter **XVI** for explanations of the concepts applied in this lab.
 
 ## End of the Document

@@ -27,7 +27,7 @@ In case you use a GCP account for this lab, we provided the Google Kubernetes En
 | GKE mode | `Standard with static K8s version` |
 | Location type | `Zonal` |
 | Release channel | `None` |
-| Kubernetes version | `v1.24.6-gke.1500` |
+| Kubernetes version | `v1.24.x` |
 | Number of nodes | `3` |
 | Machine type | `e2-medium` |
 | Image type | `cos_containerd` |
@@ -77,7 +77,7 @@ Folder: `node`
 
 * k6
 
-1. To install `k6` CLI, follow the details from [here](https://k6.io/docs/get-started/installation/).
+1. To install `k6` CLI, follow the details from [here](https://k6.io/docs/get-started/installation/)
 
 Alternatively, you can download the latest release from its GitHub [repo](https://github.com/grafana/k6/releases/latest).
 
@@ -89,7 +89,7 @@ sudo install k6-v0.41.0-macos-amd64/k6 /usr/local/bin
 
 * Application
 
-1. You can deploy the Node.js API app to the K8s cluster with the following commands:
+1. You can deploy the Node.js API app to the K8s cluster with the following commands
 
 ```shell
 cd Chapter-12
@@ -100,11 +100,11 @@ kubectl apply -f ./node/
 
 * k6
 
-1. Wait until the application LoadBalancer is available. You can check that with the following commands:
+1. Wait until the application LoadBalancer is available. You can check that with the following command
 
 `kubectl get svc node-api-rod-lb`
 
-2. After the LoadBalancer service has an external IP address assigned to it, then you can configure the environmental variables:
+2. After the _LoadBalancer_ service has an external IP address assigned to it, then you can configure the environmental variables
 
 ```shell
 cd k6
@@ -115,16 +115,16 @@ source process.env
 
 * k6
 
-1. Run the simple test by issuing the following command:
+1. Run the simple test by issuing the following command
 
 `k6 run simple-test.js`
 
-2. Run the load test by using this command:
+2. Run the load test by using this command
 
 `k6 run load-test.js`
 
 ### Explanations
 
-Please check the book chapter XII for explanations of the concepts applied in this lab.
+Please check the book chapter **XII** for explanations of the concepts applied in this lab.
 
 ## End of the Document
