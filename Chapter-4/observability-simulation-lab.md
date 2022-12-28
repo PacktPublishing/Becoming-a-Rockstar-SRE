@@ -12,11 +12,11 @@
 
 ### Pre-requisite knowledge
 
-* Familiarity with Kubernetes
+* Familiarity with `Kubernetes`
 
-* Basic notions on Node.js (JavaScript) programming language
+* Basic notions on `Node.js` (JavaScript) programming language
 
-* Good understanding of YAML (Yet Another Markup Language)
+* Good understanding of `YAML` (Yet Another Markup Language)
 
 ### Kubernetes cluster
 
@@ -43,7 +43,7 @@ You can create a K8s cluster for this lab with the following commands:
 
 ```shell
 gcloud auth login
-gcloud container clusters create cluster-1 --no-enable-autoupgrade --enable-service-externalips --enable-kubernetes-alpha --region=<your_closest_region> --cluster-version=1.23.9-gke.900 --machine-type=e2-standard-2 --monitoring=NONE
+gcloud container clusters create cluster-1 --no-enable-autoupgrade --enable-service-externalips --enable-kubernetes-alpha --region=<your_closest_region> --cluster-version=1.24.x --machine-type=e2-standard-2 --monitoring=NONE
 ```
 
 * kubectl configuration
