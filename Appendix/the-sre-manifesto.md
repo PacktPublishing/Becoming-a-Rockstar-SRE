@@ -1,6 +1,6 @@
 # The SRE Manifesto
 
-We, the `Becoming an SRE Rockstar` authors and technical reviewers, met together to discover better ways of defining who is the site reliability engineer (SRE) persona.
+We, the `Becoming a Rockstar SRE` authors and technical reviewers, met together to discover better ways of defining who is the site reliability engineer (SRE) persona.
 
 We believe we can create a more unified, concise, and solid SRE persona by stating their essential responsibilities:
 
@@ -18,7 +18,7 @@ We believe we can create a more unified, concise, and solid SRE persona by stati
 
 * SREs employ `chaos engineering` to unveil systemic weaknesses in production.
 
-We welcome anyone to use this **manifesto** at will as we made it public. We will review this **manifesto** and update it in this repository every year.
+We welcome anyone to use this **manifesto** at will as we made it public. We will review this **manifesto** in the GitHub repository and update it yearly.
 
 `August 22, 2022`.
 

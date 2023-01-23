@@ -128,8 +128,8 @@ This repository contains companion learning activities for the _Becoming a Rocks
 
 ### Appendix
 
-* Manifesto
-  * The SRE [Manifesto](./Appendix/sre-manifesto.md)
+* A. The SRE Manifesto
+  * The SRE [Manifesto](./Appendix/the-sre-manifesto.md)
 
-* The Twelve-Factor App
+* B. The Twelve-Factor App
   * Assessment [Questionnaire](./Appendix/12-factor-app-assess.md)
