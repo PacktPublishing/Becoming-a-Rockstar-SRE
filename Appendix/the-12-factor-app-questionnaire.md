@@ -3,9 +3,9 @@
 ## Factor I - Codebase: One codebase tracked in revision control
 
 * Description: _App code is always tracked in a version control system. There is only one codebase per app, but there will be many deploys of the app._
-* Details: https://12factor.net/codebase
+* Details: Codebase [factor](https://12factor.net/codebase)
 * Why: _Having different code bases for the same app leads to technical debts, merging problems, dark code, and vulnerabilities._
-* System Reliability Impact:	**2 - LOW**
+* System Reliability Impact: **2 - LOW**
 
 | **Item ID** | **Question** | **If YES** | **If NO** | **Examples** |
 | ---- | --------------------------------------------------------------------------------------------------------------- | --------- | ------------- | ------------------------------ |
@@ -17,9 +17,9 @@
 ## Factor II - Dependencies: Explicitly declare and isolate dependencies
 
 * Description: _App declares all dependencies, completely and exactly, via a dependency declaration manifest. Furthermore, it uses a dependency isolation tool during execution to ensure that no implicit dependencies “leak in” from the surrounding system. The full and explicit dependency specification is applied uniformly to both production and development._
-* Details:	https://12factor.net/dependencies
+* Details: Dependencies [factor](https://12factor.net/dependencies)
 * Why: _Having implicit dependencies or system wide ones leads to app disruptions if any changes happen to such dependencies._
-* System Reliability Impact:	**8 - HIGH**
+* System Reliability Impact: **8 - HIGH**
 
 | **Item ID** | **Question** | **If YES** | **If NO** | **Examples** |
 |----|------------------------------------------------------------------------------------|-------------|-------------|----------------------------------------------------------------------------------------------------|
@@ -31,7 +31,7 @@
 ## Factor III - Config: Store config in the environment
 
 * Description: _App stores config in environment variables (often shortened to env vars or env). Env vars are easy to change between deploys without changing any code._
-* Details: https://12factor.net/config
+* Details: Config [factor](https://12factor.net/config)
 * Why: _Storing app configuration inside the code makes the application not scalable and insecure._
 * System Reliability Impact: **1 - VERY LOW**
 
@@ -45,7 +45,7 @@
 ## Factor IV - Backing services: Treat backing services as attached resources
 
 * Description: _App makes no distinction between local and third party backing services._
-* Details: https://12factor.net/backing-services
+* Details: Backing services [factor](https://12factor.net/backing-services)
 * Why: _Resources can be attached to and detached from deploys at will. If a database resource is failing, app can switch it to another one without change the code._
 * System Reliability Impact: **5 - MEDIUM**
 
@@ -58,7 +58,7 @@
 ## Factor V - Build, release, run: Strictly separate build and run stages
 
 * Description: _App uses strict separation between the build, release, and run stages._
-* Details: https://12factor.net/build-release-run
+* Details: Build, release, run [factor](https://12factor.net/build-release-run)
 * Why: _Changes to app in runtime are not restricted and only happens with a new release, app can be easily rollbacked to a previous release._
 * System Reliability Impact: **8 - HIGH**
 
@@ -73,7 +73,7 @@
 ## Factor VI - Processes: Execute the app as one or more stateless processes
 
 * Description: _App processes are stateless and share-nothing._
-* Details: https://12factor.net/processes
+* Details: Processes [factor](https://12factor.net/processes)
 * Why: _App takes full advantage of scalable cloud infrastructure. Service disruptions are graceful and smooth._
 * System Reliability Impact: **3 - LOW MEDIUM**
 
@@ -83,11 +83,10 @@
 |6.2 |Does the app uses a microservices and/or event-driven architecture pattern?|Compliant  |Non-compliant|OpenAPI, Apache Kafka |
 | | | | | |
 
-
 ## Factor VII - Port binding: Export services via port binding
 
 * Description: _App is completely self-contained and does not rely on runtime injection of a web-server into the execution environment to create a web-facing service._
-Details: https://12factor.net/port-binding
+* Details: Port binding [factor](https://12factor.net/port-binding)
 * Why: _App doesn't rely on web servers or app servers._
 * System Reliability Impact: 2 - LOW
 
@@ -99,7 +98,7 @@ Details: https://12factor.net/port-binding
 ## Factor VIII - Concurrency: Scale out via the process model
 
 * Description: _App processes should never daemonize or write PID files. Instead, rely on the operating system’s process manager._
-* Details: https://12factor.net/concurrency
+* Details: Concurrency [factor](https://12factor.net/concurrency)
 * Why: _App is scalable horizontally as well._
 * System Reliability Impact: **5 - MEDIUM**
 
@@ -109,11 +108,10 @@ Details: https://12factor.net/port-binding
 |8.2 |Does this app have separate and distinct processes that are assigned to handle different types of requests and tasks?|Non-compliant|Compliant    | |
 | | | | | |
 
-
 ## Factor IX - Disposability: Maximize robustness with fast startup and graceful shutdown
 
 * Description: _App’s processes are disposable, meaning they can be started or stopped at a moment’s notice._
-Details: https://12factor.net/disposability
+* Details: Disposibility [factor](https://12factor.net/disposability)
 * Why: _High reliable apps have disposable processes, so it takes seconds to boot after a shutdown._
 * System Reliability Impact: **8 - HIGH**
 
@@ -123,11 +121,10 @@ Details: https://12factor.net/disposability
 |9.2 |Does the app takes more than 1 minute to boot after a shutdown?  |Non-compliant|Compliant | |
 | | | | | |
 
-
 ## Factor X - Development/production parity: Keep development, staging, and production as similar as possible
 
 * Description: _App is designed for continuous deployment by keeping the gap between development and production small._
-* Details: https://12factor.net/dev-prod-parity
+* Details: Dev/prod parity [factor](https://12factor.net/dev-prod-parity)
 * Why: _Differences between backing services mean that tiny incompatibilities crop up, causing code that worked and passed tests in development or staging to fail in production._
 * System Reliability Impact: **5 - MEDIUM**
 
@@ -137,11 +134,10 @@ Details: https://12factor.net/disposability
 |10.2|Does the app use the same dataset or other backing services in all environments? |Compliant|Non-compliant| |
 | | | | | |
 
-
 ## Factor XI - Logs: Treat logs as event streams
 
 * Description: _App never concerns itself with routing or storage of its output stream._
-* Details: https://12factor.net/logs
+* Details: Logs [factor](https://12factor.net/logs)
 * Why: _A critical part of any system observability are the logs. Reliable apps need to produce logging without affecting its functionalities._
 * System Reliability Impact: **13 - VERY HIGH**
 
@@ -152,11 +148,10 @@ Details: https://12factor.net/disposability
 |11.2|Is the app logging managed by a log management tool to store data separately instead of creating code that addresses the log?|Compliant |Non-compliant | |
 | | | | | |
 
-
 ## Factor XII - Admin processes: Run admin/management tasks as one-off processes
 
 * Description: _One-off admin processes should be run in an identical environment as the regular long-running processes of the app._
-* Details: https://12factor.net/admin-processes
+* Details: Admin processes [factor](https://12factor.net/admin-processes)
 * Why: _One-off admin processes run against a release, using the same codebase and config as any process run against that release. That minimizes errors and inconsistencies._
 * System Reliability Impact: **8 - HIGH**
 

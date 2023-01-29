@@ -128,8 +128,8 @@ This repository contains companion learning activities for the _Becoming a Rocks
 
 ### Appendix
 
-* A. The SRE Manifesto
+* A. The Site Reliability Engineer Manifesto
   * The SRE [Manifesto](./Appendix/the-sre-manifesto.md)
 
-* B. The Twelve-Factor App
-  * Assessment [Questionnaire](./Appendix/12-factor-app-assess.md)
+* B. The Twelve-Factor App Questionnaire
+  * Assessment [Questionnaire](./Appendix/the-12-factor-app-questionnaire.md)
