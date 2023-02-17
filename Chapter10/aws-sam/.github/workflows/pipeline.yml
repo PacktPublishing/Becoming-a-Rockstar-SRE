@@ -1,0 +1,91 @@
+name: SAM Validate, Build, Test, Deploy
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+    branches: [ main ]
+
+jobs:
+  sam-validate-build-test-deploy:
+    runs-on: ubuntu-latest
+    outputs:
+      env-name: ${{ steps.env-name.outputs.environment }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies with Apt Get
+        run: |
+          sudo apt-get update
+          sudo apt-get install python3.8 jq -y
+      - name: Install Pip Dependencies for CI
+        run: |
+          pip3 install pytest
+      - name: display region
+        run: echo AWS_REGION=$AWS_REGION ${#AWS_REGION}
+        shell: bash
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }} 
+      - name: Configure AWS credentials
+        id: creds
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+      - name: SAM Validate
+        run: |
+          sam validate
+      - name: Configure variables
+        shell: bash
+        id: vars
+        env:
+          REPO: ${{ github.repository }}
+          HASH: ${{ github.sha }}
+          REF: ${{ github.ref }}
+        run: |
+          # Set variables
+          BRANCH=${REF#refs/heads/}
+          REPOSITORY=`echo $REPO | tr "/" "-"`
+          #This is used for the bucket name so, it must be compliant with naming conventions
+          # https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html
+          ENVIRONMENT=$REPOSITORY-$BRANCH
+          # In this step we are setting variables and persistenting them
+          # into the environment so that they can be utilized in other steps
+          echo "branch=$BRANCH" >> $GITHUB_ENV
+          echo "repository=$REPOSITORY" >> $GITHUB_ENV
+          echo "environment=$ENVIRONMENT" >> $GITHUB_ENV
+          # Output variables to ensure their values are set correctly when ran
+          echo "The region is ${{ secrets.AWS_REGION }} (shows as *** because it's a secret)"
+          echo "The repository is $REPOSITORY"
+          echo "The environment is $ENVIRONMENT"
+          echo "The branch is $BRANCH"
+          echo "The sha is $HASH"
+          echo "The ref is $REF"
+          
+      - name: SAM Build
+        run: |
+          cd hello-world
+          go get .
+          cd ..
+          sam build
+      - name: Run unit tests
+        run: |
+          cd hello-world
+          go test
+          cd ..
+      - name: SAM Deploy
+        run: |
+          # Create S3 Bucket to store code
+          BUCKET=${{ env.environment }}
+          #make bucket name lower case
+          BUCKET="${BUCKET,,}"
+          echo "using bucket $BUCKET"
+          aws s3api head-bucket --bucket "$BUCKET" 2>/dev/null \
+            || aws s3 mb s3://$BUCKET
+          # Run SAM Deploy
+          sam deploy --template-file .aws-sam/build/template.yaml \
+            --stack-name $BUCKET \
+            --s3-bucket $BUCKET \
+            --parameter-overrides \
+              'ParameterKey=Name,ParameterValue=example \
+              ParameterKey=Version,ParameterValue=${{ steps.vars.outputs.version }}' \
+            --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM
