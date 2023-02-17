@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-game
+spec:
+  selector:
+    matchLabels:
+      app: web-game
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: web-game
+    spec:
+      containers:
+      - name: web-game
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100M
+          limits:
+            cpu: 200m
+            memory: 200M
+        image: rod4n4m1/web-gama:0.1.1
+        imagePullPolicy: Always
+        env:
+          - name: PORT
+            value: "8082"
+          - name: APP_NAME
+            value: "Web Game"
+          - name: APP_DESCRIPTION
+            value: "A role-playing scenario app!"
+          - name: K8_NODE_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: spec.nodeName
+          - name: K8_POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+          - name: K8_POD_NAMESPACE
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.namespace
+          - name: K8_POD_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
+          - name: K8_POD_SERVICE_ACCOUNT
+            valueFrom:
+              fieldRef:
+                fieldPath: spec.serviceAccountName
