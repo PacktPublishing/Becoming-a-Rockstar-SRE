@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= appName %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div style="margin:100px;">
+    <div class="jumbotron"  style="padding:40px;">
+      <h1><%= appName %></h1>
+      <h2><%= appDescription %></h2>
+      <p>This is part of the Becoming a Rockstar SRE book.</p>
+      <br>
+      <table class="table table-hover">
+        <thead>
+            <tr class="<%= styleClass %>">
+                <th>Env variable</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><%= envarName1 %></td>
+                <td><%= envarValue1 %></td>
+            </tr>
+            <tr>
+                <td><%= envarName2 %></td>
+                <td><%= envarValue2 %></td>
+            </tr>
+            <tr>
+                <td><%= envarName3 %></td>
+                <td><%= envarValue3 %></td>
+            </tr>
+            <tr>
+                <td><%= envarName4 %></td>
+                <td><%= envarValue4 %></td>
+            </tr>
+            <tr>
+              <td><%= envarName5 %></td>
+              <td><%= envarValue5 %></td>
+          </tr>
+        </tbody> 
+      </table> 
+      <br>
+      <p><a class="btn btn-primary btn-lg" href="https://github.com/PacktPublishing/Becoming-a-Rockstar-SRE" role="button">Learn more</a></p>
+    </div>
+  </div>
+</body>
+</html>
