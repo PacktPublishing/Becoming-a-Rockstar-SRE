@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-api-rod
+spec:
+  selector:
+    matchLabels:
+      app: node-api-rod
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: node-api-rod
+    spec:
+      containers:
+      - name: node-api-rod
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100M
+          limits:
+            cpu: 200m
+            memory: 200M
+        image: rod4n4m1/node-api:0.1.1
+        imagePullPolicy: Always
+        env:
+          - name: PORT
+            value: "8081"
+          - name: MEMORY_THRESHOLD
+            value: "50000000"
