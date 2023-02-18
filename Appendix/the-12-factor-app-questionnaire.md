@@ -1,4 +1,4 @@
-# The 12-factor App Questionnaire
+# The 12-Factor App Questionnaire
 
 ## Factor I - Codebase: One codebase tracked in revision control
 

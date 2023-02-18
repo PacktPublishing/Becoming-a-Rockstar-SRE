@@ -88,7 +88,7 @@ npm install
 
 1. Change the provider configuration accordingly:
 
-```yaml
+```hcl
 provider "google" {
   credentials = file("project-service-account-key.json")
   project = "provisioning-simulation-lab"
