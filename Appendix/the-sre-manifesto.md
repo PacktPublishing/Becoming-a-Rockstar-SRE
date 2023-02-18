@@ -27,7 +27,7 @@ Signing,
 * `Jeremy Proffitt` - Book author, SRE Director, Ally
 * `Rod Anami` - Book author, Client Transformation SRE, Kyndryl
 * `Gene Brown` - Book tech reviewer, Distinguished Engineer, Kyndryl
-* `Chris Smith` - Book tech reviewer, Director, Ally
+* `Chris Smith` - Book tech reviewer, Senior Director, Ally
 * `Brannen Taylor` - Book tech reviewer, Network Manager, LendingTree
 
 `Disclaimer:` _The opinions expressed by the authors and technical reviewers on this material are their own, not necessarily those of companies listed here or their subsidiaries._
