@@ -64,37 +64,37 @@ This repository contains companion learning activities for the _Becoming a Rocks
 ### Chapter 4: The Essential Observability - Metrics, Events, Logs, and Traces (MELT)
 
 * In practice - applying what you’ve learned
-  * Observability simulation [lab](./Chapter-4/observability-simulation-lab.md)
+  * Observability simulation [lab](./Chapter04/observability-simulation-lab.md)
 
 ### Chapter 5: The Resolution Path - Master Troubleshooting
 
 ### Chapter 6 - The Operational Framework: Managing Infrastructure and Systems
 
 * In practice - applying what you’ve learned
-  * Provisioning simulation [lab](./Chapter-6/provisioning-simulation-lab.md)
+  * Provisioning simulation [lab](./Chapter06/provisioning-simulation-lab.md)
 
 ### Chapter 7: The Data Consumed - Observability Data Science
 
 * In practice - applying what you’ve learned
-  * Data analysis simulation [lab](./Chapter-7/data-analysis-simulation-lab.md)
+  * Data analysis simulation [lab](./Chapter07/data-analysis-simulation-lab.md)
 
 ## Part III - Applying architecture for reliability
 
 ### Chapter 8: The Reliable Architecture - Systems Strategy and Design
 
 * In practice - applying what you’ve learned
-  * Autoscaling simulation [lab](./Chapter-8/autoscaling-simulation-lab.md)
+  * Autoscaling simulation [lab](./Chapter08/autoscaling-simulation-lab.md)
 
 ### Chapter 9: The Valued Automation - Toil Discovery and Elimination
 
 * In practice - applying what you’ve learned
-  * Automation simulation [lab](./Chapter-9/automation-simulation-lab.md)
+  * Automation simulation [lab](./Chapter09/automation-simulation-lab.md)
 
 ### Chapter 10: The Exposed Pipeline - GitOps Essentials
 
 * In practice - applying what you've learned
-  * Basic GitOps [lab](./Chapter-10/aws-sam/README.md)
-  * Advanced GitOps [lab](./Chapter-10/argocd/README.md)
+  * Basic GitOps [lab](./Chapter10/aws-sam/README.md)
+  * Advanced GitOps [lab](./Chapter10/argocd/README.md)
 
 ### Chapter 11: The Worker Bees - Orchestration of Serverless, Containers, and Kubernetes
 
@@ -104,7 +104,7 @@ This repository contains companion learning activities for the _Becoming a Rocks
 ### Chapter 12: The Final Exam - Tests and Capacity Planning
 
 * In practice - applying what you've learned
-  * Testing simulation [lab](./Chapter-12/testing-simulation-lab.md)
+  * Testing simulation [lab](./Chapter12/testing-simulation-lab.md)
 
 ## Part IV - Mastering the Outage Moments
 
@@ -119,10 +119,10 @@ This repository contains companion learning activities for the _Becoming a Rocks
 ### Chapter 16: The Chaos Injector- Advanced Systems Stability
 
 * In practice - employing the wheel-of-misfortune game
-  * Roleplaying simulation [lab](./Chapter-16/roleplaying/roleplaying-simulation-lab.md)
+  * Roleplaying simulation [lab](./Chapter16/roleplaying/roleplaying-simulation-lab.md)
 
 * In practice - injecting chaos into systems
-  * Chaos simulation [lab](./Chapter-16/chaos/chaos-simulation-lab.md)
+  * Chaos simulation [lab](./Chapter16/chaos/chaos-simulation-lab.md)
 
 ### Chapter 17: The Interview Advice - Hiring and Being Hired
 
