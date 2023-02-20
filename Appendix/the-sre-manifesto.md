@@ -29,6 +29,7 @@ Signing,
 * `Gene Brown` - Book tech reviewer, Distinguished Engineer, Kyndryl
 * `Chris Smith` - Book tech reviewer, Senior Director, Ally
 * `Brannen Taylor` - Book tech reviewer, Network Manager, LendingTree
+* `Itohan Eregie` - Book tech reviewer, Cloud Engineer, Cyberspace Network Limited
 
 `Disclaimer:` _The opinions expressed by the authors and technical reviewers on this material are their own, not necessarily those of companies listed here or their subsidiaries._
 
