@@ -74,6 +74,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ## Get to Know the Authors
 **Jeremy Proffitt**
 is passionate about solving problems with an unmatched sense of urgency - the definition of a Site Reliability Engineer. A master of solutions and technology knowledge, Jeremy is a rockstar SRE with AWS Professional Certifications in Architecture and DevOps. He has routinely saved millions in potential lost revenue in his career. In his free time, Jeremy enjoys sending time in his rockstar-appropriate man cave and loves venturing into 3D printing, electronics, and Internet of Things (IoT) projects. Jeremy currently manages a team of top SRE and DevOps talent, driving constant improvement, and is often cited in the company as a visionary of observability and emergency response.
+
 **Rod Anami**
 is a seasoned engineer, working with cloud infrastructure and software engineering technologies. As one of the Site Reliability Engineers at Kyndryl CoE, he coaches other SREs on running IT modernization, transformation, and automation projects for clients worldwide. Rod leads the global SRE guild inside Kyndryl, where he helps to grow the SRE chapters in many countries. Rod is certified as an SRE, Technical Specialist, and DevOps Engineer professional at their ultimate levels. He holds AWS, HashiCorp, Azure, and Kubernetes certificates, among others. He is passionate about contributing to the open-source software at large with Node.js libraries.
 
