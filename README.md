@@ -1,135 +1,79 @@
 # Becoming a Rockstar SRE
 
-## About This Repository
+<a href="https://www.packtpub.com/product/becoming-a-rockstar-sre/9781803239224"><img src="https://static.packt-cdn.com/products/9781803239224/cover/smaller" alt="Becoming a Rockstar SRE" height="256px" align="right"></a>
 
-This repository contains companion learning activities for the _Becoming a Rockstar SRE_ book.
+This is the code repository for [Becoming a Rockstar SRE](https://www.packtpub.com/product/becoming-a-rockstar-sre/9781803239224), published by Packt.
 
-**Disclaimer:** The practical exercises and labs below have been designed to be **integral** to the _Becoming a Rockstar SRE_ book. We recommend using these learning materials in conjunction with the book chapter contents.
+**Electrify your site reliability engineering mindset to build reliable, resilient, and efficient systems**
 
-**Licensing:** All materials inside this repository are licensed under **MIT** public [licence](./LICENSE.md)
+## What is this book about?
+Site reliability engineering is all about continuous improvement, finding the balance between business and product demands while working within technological limitations to drive higher revenue. But quantifying and understanding reliability, handling resources, and meeting developer requirements can sometimes be overwhelming. With a focus on reliability from an infrastructure and coding perspective, Becoming a Rockstar SRE brings forth the site reliability engineer (SRE) persona using real-world examples.
 
-## Book overview
+This book covers the following exciting features:
+* Get insights into the SRE role and its evolution, starting from Google’s original vision
+* Understand the key terms, such as golden signals, SLO, SLI, MTBF, MTTR, and MTTD
+* Overcome the challenges in adopting site reliability engineering
+* Employ reliable architecture and deployments with serverless, containerization, and release strategies
+* Identify monitoring targets and determine observability strategy
+* Reduce toil and leverage root cause analysis to enhance efficiency and reliability
+* Realize how business decisions can impact quality and reliability
 
-![book-cover](./images/becoming-a-rockstar-sre.png)
+If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1803239220) today!
 
-| | | |
-|:--------------|:--------------|:--------------|
-| **Title** | Becoming a Rockstar SRE | Published by `Packt`|
-| **Sub-title** | _Electrify your SRE mindset to create the perfect ballad of reliability, resiliency, and efficiency_ ||
-| **ISBN-13** | `978-1-80323-922-4` | |
-| **ISBN-10** | `1-80323-922-0` | |
-| **Author** | `Jeremy Proffitt` | GitHub [profile](https://github.com/JeremyProffitt) |
-| **Co-author** | `Rod Anami` | GitHub [profile](https://github.com/rod4n4m1) |
-| **Details** | Amazon.com [link](https://a.co/d/c6cWRzh) | |
+## Instructions and Navigations
+All of the code is organized into folders. For example, Chapter06.
 
-## Table of Contents
+The code will look like the following:
+```
+provider "google" {
+ credentials = file("project-service-account-key.json")
+ project = "autoscaling-simulation-lab"
+ region = "southamerica-east1"
+ zone = "southamerica-east1-a"
+}
 
-| **Chapter** | **Title** | **Bookmark** |
-|-------------|-----------|--------------|
-| Chapter 1 | SRE Job Role – Activities and Responsibilities | [Link](#chapter-1-sre-job-role--activities-and-responsibilities) |
-| Chapter 2 | Fundamental Numbers - Reliability Statistics | [Link](#chapter-2-fundamental-numbers---reliability-statistics) |
-| Chapter 3 | Imperfect Habits - Duct Tape Architecture and Spaghetti Coding | [Link](#chapter-3-imperfect-habits---duct-tape-architecture-and-spaghetti-coding) |
-| Chapter 4 | Essential Observability - Metrics, Events, Logs, and Traces (MELT) | [Link](#chapter-4-essential-observability---metrics-events-logs-and-traces-melt) |
-| Chapter 5 | Resolution Path - Master Troubleshooting | [Link](#chapter-5-resolution-path---master-troubleshooting) |
-| Chapter 6 | Operational Framework - Managing Infrastructure and Systems | [Link](#chapter-6-operational-framework---managing-infrastructure-and-systems) |
-| Chapter 7 | Data Consumed - Observability Data Science | [Link](#chapter-7-data-consumed---observability-data-science) |
-| Chapter 8 | Reliable Architecture - Systems Strategy and Design | [Link](#chapter-8-reliable-architecture---systems-strategy-and-design) |
-| Chapter 9 | Valued Automation - Toil Discovery and Elimination | [Link](#chapter-9-valued-automation---toil-discovery-and-elimination) |
-| Chapter 10 | Exposed Pipeline - GitOps Essentials | [Link](#chapter-10-exposed-pipeline---gitops-essentials) |
-| Chapter 11 | Worker Bees - Orchestration of Serverless, Containers, and Kubernetes | [Link](#chapter-11-worker-bees---orchestration-of-serverless-containers-and-kubernetes) |
-| Chapter 12 | Final Exam - Tests and Capacity Planning | [Link](#chapter-12-final-exam---tests-and-capacity-planning) |
-| Chapter 13 | First Thing - Runbooks and Low Noise Outage Notifications | [Link](#chapter-13-first-thing---runbooks-and-low-noise-outage-notifications) |
-| Chapter 14 | Rapid Response - Outage Management Techniques | [Link](#chapter-14-rapid-response---outage-management-techniques) |
-| Chapter 15 | Postmortem Cander - Long Term Resolution | [Link](#chapter-15-postmortem-cander---long-term-resolution) |
-| Chapter 16 | Chaos Injector - Advanced Systems Stability | [Link](#chapter-16-chaos-injector--advanced-systems-stability) |
-| Chapter 17 | Interview Advice - Hiring and Being Hired | [Link](#chapter-17-interview-advice---hiring-and-being-hired) |
-| Appendix | Additional book contents | [Link](#appendix) |
+```
 
-## Part I - Understanding the basics of who, what and why
+**Following is what you need for this book:**
+This book is for IT professionals, including developers looking to advance into an SRE role, system administrators mastering technologies, and executives experiencing repeated downtime in their organizations. Anyone interested in bringing reliability and automation to their organization to drive down customer impact and revenue loss while increasing development throughput will find this book useful. A basic understanding of API and web architecture and some experience with cloud computing and services will assist with understanding the concepts covered.
 
-### Chapter 1: SRE Job Role – Activities and Responsibilities
+With the following software and hardware list you can run all code files present in the book (Chapter 1-15).
+### Software and Hardware List
+| Chapter | Software required | OS required |
+| -------- | ------------------------------------ | ----------------------------------- |
+| 1-17 | GitHub | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Kubernetes | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Node.js | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Prometheus | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Grafana | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Terraform | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Python | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Golang | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Slack | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | PagerDuty | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Grype | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Syft | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Argo CD | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Grafana k6 | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | LitmusChaos | Windows, Mac OS X, and Linux (Any) |
+| 1-17 |  Google Cloud Platform account | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | AWS account (alternative) | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Microsoft Azure account (alternative) | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Google Kubernetes Engine (GKE) | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Google Compute Engine (GCE) | Windows, Mac OS X, and Linux (Any) |
+| 1-17 | Amazon Elastic Kubernetes Service (alternative) | Windows, Mac OS X, and Linux (Any) |
+| 1-17 |  Azure Kubernetes Service (alternative) | Windows, Mac OS X, and Linux (Any) |
 
-* There's no practical exercises for this chapter.
+We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it]( https://static.packt-cdn.com/downloads/9781803239224_ColorImages.pdf).
 
-### Chapter 2: Fundamental Numbers - Reliability Statistics
+### Related products
+* Cloud-Native Observability with OpenTelemetry [[Packt]](https://www.packtpub.com/product/cloud-native-observability-with-opentelemetry/9781801077705) [[Amazon]](https://www.amazon.com/dp/1801077703)
 
-* There's no practical exercises for this chapter.
+* SAFe® for DevOps Practitioners [[Packt]](https://www.packtpub.com/product/safe-for-devops-practitioners/9781803231426) [[Amazon]](https://www.amazon.com/dp/1803231424)
 
-### Chapter 3: Imperfect Habits - Duct Tape Architecture and Spaghetti Coding
+## Get to Know the Authors
+**Jeremy Proffitt**
+is passionate about solving problems with an unmatched sense of urgency - the definition of a Site Reliability Engineer. A master of solutions and technology knowledge, Jeremy is a rockstar SRE with AWS Professional Certifications in Architecture and DevOps. He has routinely saved millions in potential lost revenue in his career. In his free time, Jeremy enjoys sending time in his rockstar-appropriate man cave and loves venturing into 3D printing, electronics, and Internet of Things (IoT) projects. Jeremy currently manages a team of top SRE and DevOps talent, driving constant improvement, and is often cited in the company as a visionary of observability and emergency response.
+**Rod Anami**
+is a seasoned engineer, working with cloud infrastructure and software engineering technologies. As one of the Site Reliability Engineers at Kyndryl CoE, he coaches other SREs on running IT modernization, transformation, and automation projects for clients worldwide. Rod leads the global SRE guild inside Kyndryl, where he helps to grow the SRE chapters in many countries. Rod is certified as an SRE, Technical Specialist, and DevOps Engineer professional at their ultimate levels. He holds AWS, HashiCorp, Azure, and Kubernetes certificates, among others. He is passionate about contributing to the open-source software at large with Node.js libraries.
 
-* There's no practical exercises for this chapter.
-
-## Part II - Implementing Observability for site reliability engineering
-
-### Chapter 4: Essential Observability - Metrics, Events, Logs, and Traces (MELT)
-
-* In practice - applying what you’ve learned
-  * Observability simulation [lab](./Chapter04/observability-simulation-lab.md)
-
-### Chapter 5: Resolution Path - Master Troubleshooting
-
-### Chapter 6: Operational Framework - Managing Infrastructure and Systems
-
-* In practice - applying what you’ve learned
-  * Provisioning simulation [lab](./Chapter06/provisioning-simulation-lab.md)
-
-### Chapter 7: Data Consumed - Observability Data Science
-
-* In practice - applying what you’ve learned
-  * Data analysis simulation [lab](./Chapter07/data-analysis-simulation-lab.md)
-
-## Part III - Applying architecture for reliability
-
-### Chapter 8: Reliable Architecture - Systems Strategy and Design
-
-* In practice - applying what you’ve learned
-  * Autoscaling simulation [lab](./Chapter08/autoscaling-simulation-lab.md)
-
-### Chapter 9: Valued Automation - Toil Discovery and Elimination
-
-* In practice - applying what you’ve learned
-  * Automation simulation [lab](./Chapter09/automation-simulation-lab.md)
-
-### Chapter 10: Exposed Pipeline - GitOps Essentials
-
-* In practice - applying what you've learned
-  * Basic GitOps [lab](./Chapter10/aws-sam/README.md)
-  * Advanced GitOps [lab](./Chapter10/argocd/README.md)
-
-### Chapter 11: Worker Bees - Orchestration of Serverless, Containers, and Kubernetes
-
-* In practice - applying what you've learned
-  * Understanding orchestrated worker reliability and retries [lab](./Chapter-11/readme.md)
-
-### Chapter 12: Final Exam - Tests and Capacity Planning
-
-* In practice - applying what you've learned
-  * Testing simulation [lab](./Chapter12/testing-simulation-lab.md)
-
-## Part IV - Mastering the Outage Moments
-
-### Chapter 13: First Thing - Runbooks and Low Noise Outage Notifications
-
-### Chapter 14: Rapid Response - Outage Management Techniques
-
-### Chapter 15: Postmortem Cander - Long Term Resolution
-
-## Part V - Looking Into Future Trends and Preparing for SRE Interviews
-
-### Chapter 16: Chaos Injector - Advanced Systems Stability
-
-* In practice - employing the wheel-of-misfortune game
-  * Roleplaying simulation [lab](./Chapter16/roleplaying/roleplaying-simulation-lab.md)
-
-* In practice - injecting chaos into systems
-  * Chaos simulation [lab](./Chapter16/chaos/chaos-simulation-lab.md)
-
-### Chapter 17: Interview Advice - Hiring and Being Hired
-
-### Appendix
-
-* A. The Site Reliability Engineer Manifesto
-  * The SRE [Manifesto](./Appendix/the-sre-manifesto.md)
-
-* B. The Twelve-Factor App Questionnaire
-  * Assessment [Questionnaire](./Appendix/the-12-factor-app-questionnaire.md)
