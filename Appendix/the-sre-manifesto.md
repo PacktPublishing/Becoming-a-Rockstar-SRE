@@ -30,7 +30,8 @@ Signing,
 * `Chris Smith` - Book tech reviewer, Senior Director, Ally
 * `Brannen Taylor` - Book tech reviewer, Network Manager, LendingTree
 * `Itohan Eregie` - Book tech reviewer, Cloud Engineer, Cyberspace Network Limited
+* `Thomas Kings` - Site Reliability Engineer, Kyndryl
 
-`Disclaimer:` _The opinions expressed by the authors and technical reviewers on this material are their own, not necessarily those of companies listed here or their subsidiaries._
+`Disclaimer:` _The opinions expressed by the authors and technical reviewers on this material are their own, not necessarily those of companies listed here or their subsidiaries. The mention of the above companies is solely for transparency and fairness purposes. Any SRE from any company is welcome to sign this manifesto._
 
 ## End of the Document
