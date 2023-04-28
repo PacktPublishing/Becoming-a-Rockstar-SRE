@@ -78,3 +78,8 @@ is passionate about solving problems with an unmatched sense of urgency - the de
 **Rod Anami**
 is a seasoned engineer, working with cloud infrastructure and software engineering technologies. As one of the Site Reliability Engineers at Kyndryl CoE, he coaches other SREs on running IT modernization, transformation, and automation projects for clients worldwide. Rod leads the global SRE guild inside Kyndryl, where he helps to grow the SRE chapters in many countries. Rod is certified as an SRE, Technical Specialist, and DevOps Engineer professional at their ultimate levels. He holds AWS, HashiCorp, Azure, and Kubernetes certificates, among others. He is passionate about contributing to the open-source software at large with Node.js libraries.
 
+
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781803239224">https://packt.link/free-ebook/9781803239224 </a> </p>
