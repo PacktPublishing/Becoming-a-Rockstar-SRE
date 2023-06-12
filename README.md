@@ -66,6 +66,10 @@ With the following software and hardware list you can run all code files present
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it]( https://static.packt-cdn.com/downloads/9781803239224_ColorImages.pdf).
 
+## Errata
+
+* Page 27: The following acronym *MTBR* needs to be replaced by *MTBF*. Additionally, we will define and discuss the mean time between failure (MTBR), ...
+
 ### Related products
 * Cloud-Native Observability with OpenTelemetry [[Packt]](https://www.packtpub.com/product/cloud-native-observability-with-opentelemetry/9781801077705) [[Amazon]](https://www.amazon.com/dp/1801077703)
 
