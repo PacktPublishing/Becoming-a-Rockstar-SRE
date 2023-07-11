@@ -10,7 +10,7 @@ We believe we can create a more unified, concise, and solid SRE persona by stati
 
 * SREs manage systems, services, and infrastructure to learn how to `automate toil`.
 
-* SREs use `data science` and `statistical methods` to understand observability data.
+* SREs use `data science` and `statistical methods` to understand the observability of data.
 
 * SREs identify, measure, and reduce `toil` arising from operational and engineering work.
 
