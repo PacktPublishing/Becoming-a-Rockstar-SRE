@@ -12,8 +12,15 @@ Please find all corrections and fixes by chapter below.
 
 | **Page** | **Original text** | **Correct text** |
 |:---:|:------------|:------------|
-| 27 | Additionally, we will define and discuss the mean time between failure (_MTBR_), ... |Additionally, we will define and discuss the mean time between failure (**MTBF**), ... |
-| 37 | An example of this may be the network operations center is expected to engage within 5 minutes of an alarm, but if they _do_ have an issue resolved in 20 minutes, senior engineers are paged to assist with the response. | An example of this may be the network operations center is expected to engage within 5 minutes of an alarm, but if they **don't** have an issue resolved in 20 minutes, senior engineers are paged to assist with the response. |
+| 27 | Additionally, we will define and discuss the mean time between failure (`MTBR`), ... | Additionally, we will define and discuss the mean time between failure (`MTBF`), ... |
+| 37 | An example of this may be the network operations center is expected to engage within 5 minutes of an alarm, but if they `do` have an issue resolved in 20 minutes, senior engineers are paged to assist with the response. | An example of this may be the network operations center is expected to engage within 5 minutes of an alarm, but if they `don't` have an issue resolved in 20 minutes, senior engineers are paged to assist with the response. |
+|  |  |  |
+
+### Chapter 6: Operational Framework – Managing Infrastructure and Systems
+
+| **Page** | **Original text** | **Correct text** |
+|:---:|:------------|:------------|
+| 21 | The blue environment has the current app `versions` and receives all the traffic from users. | The blue environment has the current app `version` and receives all the traffic from users. |
 |  |  |  |
 
 ## End of Document

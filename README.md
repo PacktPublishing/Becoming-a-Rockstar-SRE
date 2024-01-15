@@ -4,7 +4,7 @@
 
 This is the code repository for [Becoming a Rockstar SRE](https://www.packtpub.com/product/becoming-a-rockstar-sre/9781803239224), published by Packt.
 
-**Electrify your site reliability engineering mindset to build reliable, resilient, and efficient systems**
+* **Electrify your site reliability engineering mindset to build reliable, resilient, and efficient systems**
 
 ## What is this book about?
 
@@ -94,3 +94,5 @@ is a seasoned engineer, working with cloud infrastructure and software engineeri
 
 <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
 <p align="center"> <a href="https://packt.link/free-ebook/9781803239224">https://packt.link/free-ebook/9781803239224</a></p>
+
+## End
